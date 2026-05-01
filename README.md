@@ -13,10 +13,11 @@ Looking to collaborate with devs who think in:
 **systems • markets • edge**
 
 ---
+## 💫 About Me:
 
-##  About Me:
+Started trading and investing at 15, now focused on options trading — especially hedging, multi-leg setups, and building advanced strategies. Currently working towards developing prop-desk–style approaches while continuously studying market behavior, risk, and execution.
 
-I build systems where markets meet code — focusing on advanced options trading tools like hedging frameworks, multi-leg strategy builders, and real-time analytics platforms. Using TypeScript, Next.js, and scalable backend architectures, I work on creating prop-desk–style infrastructure that models risk, visualizes payoffs, and supports fast decision-making. My approach is engineering-first: design, simulate, optimize, and deploy — with a growing focus on AI-driven workflows and MCP-based systems to make trading smarter, faster, and more adaptive.
+When I’m not thinking about markets or startups, I’m coding.
 
 ---
 
@@ -55,7 +56,7 @@ I build systems where markets meet code — focusing on advanced options trading
 
 ---
 
-## 📈 Quote:
+## 📈 Random stuff :
 
-> “I don’t look for the best investments. I look for the best algorithms.”  
-> — Jim Simons
+> “Quantified risk turns uncertainty into expected value—and expected value is what you bet on.”
+
