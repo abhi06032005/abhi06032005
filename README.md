@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0f0c29,50:302b63,100:24243e&height=280&section=header&text=Hi%20There!%20I'm%20Abhijeet%20%F0%9F%91%8B&fontSize=42&fontColor=ffffff&animation=fadeIn&fontAlignY=35&desc=Full-Stack%20Developer%20crafting%20fast%2C%20production-ready%20web%20apps&descAlignY=53&descSize=18&descColor=b8b8ff" width="100%"/>
+<img src="./assets/adventure-banner.svg" width="100%" alt="Abhijeet Nayak — animated pixel-art banner"/>
 
 <a href="https://git.io/typing-svg">
   <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=24&duration=3000&pause=800&color=38BDF8&center=true&vCenter=true&width=650&lines=Full-Stack+Developer+%F0%9F%9A%80;React+%7C+Next.js+%7C+Node.js+%7C+TypeScript;Shipping+production+apps%2C+not+just+demos+%F0%9F%92%BB;Hackfest+Top+50%2F1100%2B+teams+%F0%9F%8F%86;Always+building%2C+always+learning" alt="Typing SVG" />
@@ -191,16 +191,6 @@ const abhijeet: DeveloperProfile = {
 
 <img src="https://capsule-render.vercel.app/api?type=rect&color=0:0f0c29,100:302b63&height=3&section=header" width="100%"/>
 
-## 🐍 Contribution Snake
-
-<div align="center">
-<img src="https://raw.githubusercontent.com/abhi06032005/abhi06032005/output/github-contribution-grid-snake.svg" width="100%"/>
-
-<sub>⚙️ Powered by a GitHub Action — see setup note below to activate it on your repo.</sub>
-</div>
-
-<img src="https://capsule-render.vercel.app/api?type=rect&color=0:0f0c29,100:302b63&height=3&section=header" width="100%"/>
-
 ## 🤝 Let's Connect
 
 <div align="center">
@@ -226,28 +216,38 @@ const abhijeet: DeveloperProfile = {
    (public repo, README.md at the root). If that repo doesn't exist yet,
    create it — GitHub will prompt you to when you visit your own profile.
 
-2. GITHUB STATS / TROPHY / STREAK / ACTIVITY-GRAPH WIDGETS
+2. THE PIXEL-ART BANNER AT THE TOP (adventure-banner.svg)
+   This is a custom-built, original animated SVG (not a third-party
+   embed) — a pixel pirate captain waving on a shore, a bobbing ship,
+   scrolling waves, twinkling stars and a treasure chest that pops open
+   to reveal "</>" with sparkles. It animates natively once GitHub loads
+   it as an image (SMIL/CSS animation baked into the SVG itself), so
+   there's no GitHub Action or service dependency — it just works.
+   Setup: create an `assets/` folder in your abhi06032005/abhi06032005
+   repo and upload adventure-banner.svg into it, so the path
+   `./assets/adventure-banner.svg` resolves. If you'd rather rename the
+   folder/file, just update the <img src="..."> at the top of this file
+   to match.
+
+3. GITHUB STATS / TROPHY / STREAK / ACTIVITY-GRAPH WIDGETS
    All usernames are already set to "abhi06032005". They're powered by
    free public services (github-readme-stats, github-profile-trophy,
    streak-stats, github-readme-activity-graph, skillicons.dev, shields.io,
    komarev.com, capsule-render, readme-typing-svg) — nothing to install,
    they just need internet access from the viewer's browser to load.
 
-3. PROJECT LINKS
+4. PROJECT LINKS
    I used placeholder repo URLs (finguard-ai, pdf-chat-rag, realtime-collab,
    bharatorigin) based on your project names — swap each one for the real
    repo URL once you confirm/rename them.
 
-4. SNAKE ANIMATION (the contribution-graph snake game)
-   This needs a tiny one-time setup:
-     a. In your abhi06032005/abhi06032005 repo, add a workflow file at
-        .github/workflows/snake.yml (ask me and I'll generate it for you).
-     b. Go to repo Settings → Actions → General → enable "Read and write
-        permissions" for the GITHUB_TOKEN.
-     c. Run the workflow once manually (Actions tab → Run workflow).
-   After that it auto-updates daily and the image above will render.
+5. THE OLD SNAKE ANIMATION HAS BEEN REMOVED
+   It needed a GitHub Action to be enabled on your repo first, which is
+   why it showed as broken. The new pixel banner above replaces it and
+   needs no setup beyond step 2. If you still want the contribution-snake
+   game too, just ask and I'll hand you the workflow file again.
 
-5. PRIVACY
+6. PRIVACY
    I left your phone number off this public page on purpose — it's a
    public-facing profile. Email + LinkedIn are enough for people to reach you.
 
