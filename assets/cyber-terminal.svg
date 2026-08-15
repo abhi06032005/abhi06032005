@@ -1,0 +1,229 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 380" width="100%" height="100%" fill="none">
+  <defs>
+    <linearGradient id="termBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a0a14"/>
+      <stop offset="100%" stop-color="#120e24"/>
+    </linearGradient>
+
+    <linearGradient id="termBorder" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00f0ff" stop-opacity="0.4"/>
+      <stop offset="50%" stop-color="#7000ff" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#ff007f" stop-opacity="0.4"/>
+    </linearGradient>
+
+    <linearGradient id="cyanBar" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00f0ff"/>
+      <stop offset="100%" stop-color="#38bdf8"/>
+    </linearGradient>
+
+    <linearGradient id="purpleBar" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#a855f7"/>
+      <stop offset="100%" stop-color="#ec4899"/>
+    </linearGradient>
+
+    <filter id="termGlow" x="-10%" y="-10%" width="120%" height="120%">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <style>
+    @keyframes cursorBlink {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0; }
+    }
+
+    @keyframes cpuPulse {
+      0%, 100% { width: 95px; }
+      50% { width: 125px; }
+    }
+
+    @keyframes ramPulse {
+      0%, 100% { width: 110px; }
+      50% { width: 85px; }
+    }
+
+    @keyframes lineFade {
+      0% { opacity: 0.6; }
+      50% { opacity: 1; }
+      100% { opacity: 0.6; }
+    }
+
+    .term-code {
+      font-family: 'Fira Code', 'JetBrains Mono', Consolas, Monaco, monospace;
+      font-size: 13px;
+      line-height: 1.6;
+    }
+
+    .cursor { animation: cursorBlink 0.9s infinite; }
+    .cpu-bar { animation: cpuPulse 4s ease-in-out infinite; }
+    .ram-bar { animation: ramPulse 5s ease-in-out infinite; }
+    .telemetry-pulse { animation: lineFade 2.5s ease-in-out infinite; }
+  </style>
+
+  <!-- Terminal Window Outer Container -->
+  <rect x="2" y="2" width="896" height="376" rx="12" fill="url(#termBg)" stroke="url(#termBorder)" stroke-width="1.5"/>
+
+  <!-- Top Bar / Title Bar -->
+  <path d="M 2 14 Q 2 2 14 2 L 886 2 Q 898 2 898 14 L 898 42 L 2 42 Z" fill="#0e0c1f" fill-opacity="0.9"/>
+  <line x1="2" y1="42" x2="898" y2="42" stroke="#2a244d" stroke-width="1"/>
+
+  <!-- macOS Window Controls with Glow -->
+  <circle cx="24" cy="22" r="6" fill="#ff5f56" opacity="0.9"/>
+  <circle cx="44" cy="22" r="6" fill="#ffbd2e" opacity="0.9"/>
+  <circle cx="64" cy="22" r="6" fill="#27c93f" opacity="0.9"/>
+
+  <!-- File Tab 1 (Active) -->
+  <g transform="translate(95, 8)">
+    <rect width="180" height="28" rx="6" fill="#171333" stroke="#00f0ff" stroke-width="0.8" stroke-opacity="0.4"/>
+    <text x="14" y="19" fill="#00f0ff" font-family="'Fira Code', monospace" font-size="11" font-weight="600">⚡ abhijeet.config.ts</text>
+  </g>
+
+  <!-- File Tab 2 (Inactive) -->
+  <g transform="translate(285, 8)">
+    <rect width="145" height="28" rx="6" fill="#0c0a1a" opacity="0.6"/>
+    <text x="14" y="19" fill="#71717a" font-family="'Fira Code', monospace" font-size="11">🤖 rag-pipeline.py</text>
+  </g>
+
+  <!-- Top Right Session Badge -->
+  <g transform="translate(730, 11)">
+    <text x="150" y="16" text-anchor="end" fill="#38bdf8" font-family="'Fira Code', monospace" font-size="11" opacity="0.8">
+      zsh - 80x24 • UTF-8
+    </text>
+  </g>
+
+  <!-- Main Code Content Area -->
+  <g transform="translate(32, 72)" class="term-code">
+    <!-- Line 1 -->
+    <text x="0" y="0">
+      <tspan fill="#6b7280">01 </tspan>
+      <tspan fill="#f43f5e" font-weight="bold">const</tspan>
+      <tspan fill="#00f0ff"> abhijeet</tspan>
+      <tspan fill="#94a3b8">: </tspan>
+      <tspan fill="#38bdf8">FullStackArchitect</tspan>
+      <tspan fill="#94a3b8"> = {</tspan>
+    </text>
+
+    <!-- Line 2 -->
+    <text x="0" y="24">
+      <tspan fill="#6b7280">02 </tspan>
+      <tspan fill="#e2e8f0">  name</tspan><tspan fill="#94a3b8">: </tspan>
+      <tspan fill="#a7f3d0">"Abhijeet Nayak"</tspan><tspan fill="#94a3b8">,</tspan>
+    </text>
+
+    <!-- Line 3 -->
+    <text x="0" y="48">
+      <tspan fill="#6b7280">03 </tspan>
+      <tspan fill="#e2e8f0">  academics</tspan><tspan fill="#94a3b8">: </tspan>
+      <tspan fill="#a7f3d0">"BCA — 8.9 CGPA"</tspan><tspan fill="#94a3b8">,</tspan>
+      <tspan fill="#6b7280"> // Strong CS Fundamentals &amp; DSA</tspan>
+    </text>
+
+    <!-- Line 4 -->
+    <text x="0" y="72">
+      <tspan fill="#6b7280">04 </tspan>
+      <tspan fill="#e2e8f0">  hackathons</tspan><tspan fill="#94a3b8">: </tspan>
+      <tspan fill="#fde047">"Top 50 Finalist (out of 1,100+ teams @ Hackfest 🏆)"</tspan><tspan fill="#94a3b8">,</tspan>
+    </text>
+
+    <!-- Line 5 -->
+    <text x="0" y="96">
+      <tspan fill="#6b7280">05 </tspan>
+      <tspan fill="#e2e8f0">  coreStack</tspan><tspan fill="#94a3b8">: [</tspan>
+      <tspan fill="#38bdf8">"Next.js"</tspan><tspan fill="#94a3b8">, </tspan>
+      <tspan fill="#38bdf8">"React"</tspan><tspan fill="#94a3b8">, </tspan>
+      <tspan fill="#38bdf8">"Node.js"</tspan><tspan fill="#94a3b8">, </tspan>
+      <tspan fill="#38bdf8">"TypeScript"</tspan><tspan fill="#94a3b8">, </tspan>
+      <tspan fill="#38bdf8">"PostgreSQL"</tspan><tspan fill="#94a3b8">, </tspan>
+      <tspan fill="#38bdf8">"Prisma"</tspan>
+      <tspan fill="#94a3b8">],</tspan>
+    </text>
+
+    <!-- Line 6 -->
+    <text x="0" y="120">
+      <tspan fill="#6b7280">06 </tspan>
+      <tspan fill="#e2e8f0">  specialties</tspan><tspan fill="#94a3b8">: [</tspan>
+      <tspan fill="#c084fc">"RAG AI Pipelines (Qdrant/Cohere)"</tspan><tspan fill="#94a3b8">, </tspan>
+      <tspan fill="#c084fc">"Real-Time WebSockets (~16ms)"</tspan><tspan fill="#94a3b8">, </tspan>
+      <tspan fill="#c084fc">"HMAC Payments"</tspan>
+      <tspan fill="#94a3b8">],</tspan>
+    </text>
+
+    <!-- Line 7 -->
+    <text x="0" y="144">
+      <tspan fill="#6b7280">07 </tspan>
+      <tspan fill="#e2e8f0">  productionImpact</tspan><tspan fill="#94a3b8">: { </tspan>
+      <tspan fill="#f472b6">loadTimeReduction</tspan><tspan fill="#94a3b8">: </tspan><tspan fill="#34d399">"35%"</tspan><tspan fill="#94a3b8">, </tspan>
+      <tspan fill="#f472b6">sessionBoost</tspan><tspan fill="#94a3b8">: </tspan><tspan fill="#34d399">"20%"</tspan><tspan fill="#94a3b8">, </tspan>
+      <tspan fill="#f472b6">dsaSolved</tspan><tspan fill="#94a3b8">: </tspan><tspan fill="#34d399">"200+"</tspan>
+      <tspan fill="#94a3b8"> },</tspan>
+    </text>
+
+    <!-- Line 8 -->
+    <text x="0" y="168">
+      <tspan fill="#6b7280">08 </tspan>
+      <tspan fill="#e2e8f0">  currentMission</tspan><tspan fill="#94a3b8">: </tspan>
+      <tspan fill="#67e8f9">"Building scalable AI fintech &amp; distributed software systems"</tspan>
+    </text>
+
+    <!-- Line 9 -->
+    <text x="0" y="192">
+      <tspan fill="#6b7280">09 </tspan>
+      <tspan fill="#94a3b8">};</tspan>
+    </text>
+
+    <!-- Line 10 (Interactive Prompt Line) -->
+    <text x="0" y="222">
+      <tspan fill="#6b7280">10 </tspan>
+      <tspan fill="#34d399" font-weight="bold">abhi@macbook-pro</tspan>
+      <tspan fill="#6b7280">:</tspan>
+      <tspan fill="#38bdf8">~/developer</tspan>
+      <tspan fill="#f43f5e">$ </tspan>
+      <tspan fill="#e2e8f0">ship_code --scale --instant</tspan>
+      <tspan class="cursor" fill="#00f0ff" font-weight="bold"> ▋</tspan>
+    </text>
+  </g>
+
+  <!-- Right Telemetry Sidebar Divider -->
+  <line x1="660" y1="52" x2="660" y2="360" stroke="#241e42" stroke-width="1"/>
+
+  <!-- Telemetry HUD in Sidebar -->
+  <g transform="translate(680, 72)">
+    <text x="0" y="0" fill="#00f0ff" font-family="'Fira Code', monospace" font-size="11" font-weight="bold" letter-spacing="1">⚡ SYS TELEMETRY</text>
+
+    <!-- CPU Usage Meter -->
+    <g transform="translate(0, 20)">
+      <text x="0" y="0" fill="#94a3b8" font-family="'Segoe UI', sans-serif" font-size="11">CPU CORE LOAD</text>
+      <text x="180" y="0" text-anchor="end" fill="#00f0ff" font-family="'Fira Code', monospace" font-size="11">78.4%</text>
+      <rect x="0" y="8" width="180" height="6" rx="3" fill="#1e183a"/>
+      <rect class="cpu-bar" x="0" y="8" width="115" height="6" rx="3" fill="url(#cyanBar)"/>
+    </g>
+
+    <!-- Memory Meter -->
+    <g transform="translate(0, 60)">
+      <text x="0" y="0" fill="#94a3b8" font-family="'Segoe UI', sans-serif" font-size="11">RAM UTILIZATION</text>
+      <text x="180" y="0" text-anchor="end" fill="#ec4899" font-family="'Fira Code', monospace" font-size="11">4.2 / 16 GB</text>
+      <rect x="0" y="8" width="180" height="6" rx="3" fill="#1e183a"/>
+      <rect class="ram-bar" x="0" y="8" width="95" height="6" rx="3" fill="url(#purpleBar)"/>
+    </g>
+
+    <!-- WebSocket Latency -->
+    <g transform="translate(0, 100)" class="telemetry-pulse">
+      <text x="0" y="0" fill="#94a3b8" font-family="'Segoe UI', sans-serif" font-size="11">WS LATENCY</text>
+      <text x="180" y="0" text-anchor="end" fill="#34d399" font-family="'Fira Code', monospace" font-size="11">⚡ 16 ms</text>
+      <rect x="0" y="8" width="180" height="6" rx="3" fill="#1e183a"/>
+      <rect x="0" y="8" width="165" height="6" rx="3" fill="#34d399"/>
+    </g>
+
+    <!-- Status Box -->
+    <g transform="translate(0, 138)">
+      <rect width="180" height="42" rx="6" fill="#101a2e" stroke="#00f0ff" stroke-width="0.8" stroke-opacity="0.4"/>
+      <circle cx="15" cy="21" r="4" fill="#00ff88" filter="url(#termGlow)"/>
+      <text x="28" y="18" fill="#38bdf8" font-family="'Segoe UI', sans-serif" font-size="10" font-weight="700">STATUS: ACTIVE</text>
+      <text x="28" y="32" fill="#94a3b8" font-family="'Segoe UI', sans-serif" font-size="9">OPEN TO SDE ROLES</text>
+    </g>
+  </g>
+</svg>
