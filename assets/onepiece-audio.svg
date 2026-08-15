@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 580 95" width="100%" height="100%" fill="none">
+  <defs>
+    <linearGradient id="audioGradBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a0818"/>
+      <stop offset="50%" stop-color="#19102c"/>
+      <stop offset="100%" stop-color="#0e071a"/>
+    </linearGradient>
+
+    <filter id="strawGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <style>
+    @keyframes eqWaveGold1 { 0%, 100% { height: 6px; y: 60px; } 50% { height: 32px; y: 34px; } }
+    @keyframes eqWaveGold2 { 0%, 100% { height: 28px; y: 38px; } 50% { height: 8px; y: 58px; } }
+    @keyframes eqWaveGold3 { 0%, 100% { height: 12px; y: 54px; } 50% { height: 34px; y: 32px; } }
+    @keyframes eqWaveGold4 { 0%, 100% { height: 34px; y: 32px; } 50% { height: 14px; y: 52px; } }
+    @keyframes spinStrawHat { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }
+
+    .g1 { animation: eqWaveGold1 0.9s ease-in-out infinite; }
+    .g2 { animation: eqWaveGold2 1.2s ease-in-out infinite 0.1s; }
+    .g3 { animation: eqWaveGold3 0.8s ease-in-out infinite 0.3s; }
+    .g4 { animation: eqWaveGold4 1.4s ease-in-out infinite 0.2s; }
+    .g5 { animation: eqWaveGold1 1.0s ease-in-out infinite 0.4s; }
+    .g6 { animation: eqWaveGold3 0.7s ease-in-out infinite 0.15s; }
+    .g7 { animation: eqWaveGold2 1.3s ease-in-out infinite 0.25s; }
+    .g8 { animation: eqWaveGold4 1.1s ease-in-out infinite 0.35s; }
+    .straw-disc { transform-origin: 48px 48px; animation: spinStrawHat 9s linear infinite; }
+  </style>
+
+  <!-- Container -->
+  <rect x="1" y="1" width="578" height="93" rx="12" fill="url(#audioGradBg)" stroke="#fbc02d" stroke-width="1.2" stroke-opacity="0.5"/>
+
+  <!-- Spinning Straw Hat Vinyl Disc -->
+  <g class="straw-disc">
+    <circle cx="48" cy="48" r="32" fill="#1b1226" stroke="#fbc02d" stroke-width="1.5"/>
+    <circle cx="48" cy="48" r="23" fill="none" stroke="#372648" stroke-width="1"/>
+    <circle cx="48" cy="48" r="14" fill="none" stroke="#372648" stroke-width="1"/>
+    <!-- Mini Straw Hat at Center -->
+    <circle cx="48" cy="48" r="8" fill="#fbc02d" filter="url(#strawGlow)"/>
+    <circle cx="48" cy="48" r="4" fill="#d50000"/>
+  </g>
+
+  <!-- Track Info -->
+  <g transform="translate(94, 28)">
+    <text x="0" y="0" fill="#fbc02d" font-family="'Segoe UI', sans-serif" font-size="10.5" font-weight="900" letter-spacing="1">
+      🥁 DRUMS OF LIBERATION // BINK'S SAKE (LO-FI REMIX)
+    </text>
+    <text x="0" y="20" fill="#ffffff" font-family="'Segoe UI', -apple-system, sans-serif" font-size="13" font-weight="700">
+      Overtaken &amp; Grand Line Horizons (Continuous Coding Flow)
+    </text>
+    <text x="0" y="38" fill="#94a3b8" font-family="'Segoe UI', sans-serif" font-size="11">
+      Straw Hat Pirates • Deep Focus Architecture Mode
+    </text>
+  </g>
+
+  <!-- Animated Golden/Crimson Equalizer Bars on Right -->
+  <g transform="translate(485, 0)">
+    <rect class="g1" x="0" y="48" width="4.5" height="18" rx="2" fill="#fbc02d"/>
+    <rect class="g2" x="8" y="48" width="4.5" height="18" rx="2" fill="#ff3d00"/>
+    <rect class="g3" x="16" y="48" width="4.5" height="18" rx="2" fill="#ff1744"/>
+    <rect class="g4" x="24" y="48" width="4.5" height="18" rx="2" fill="#c084fc"/>
+    <rect class="g5" x="32" y="48" width="4.5" height="18" rx="2" fill="#38bdf8"/>
+    <rect class="g6" x="40" y="48" width="4.5" height="18" rx="2" fill="#fbc02d"/>
+    <rect class="g7" x="48" y="48" width="4.5" height="18" rx="2" fill="#ff3d00"/>
+    <rect class="g8" x="56" y="48" width="4.5" height="18" rx="2" fill="#fbc02d"/>
+  </g>
+</svg>
