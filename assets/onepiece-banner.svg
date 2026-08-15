@@ -1,56 +1,34 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 330" width="100%" height="100%" fill="none">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 940 340" width="100%" height="100%" fill="none">
   <defs>
-    <!-- Sky & Ocean Gradients -->
+    <!-- Grand Line Twilight Sky -->
     <linearGradient id="skyGrad" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" stop-color="#060814"/>
-      <stop offset="45%" stop-color="#121332"/>
-      <stop offset="75%" stop-color="#24143a"/>
-      <stop offset="100%" stop-color="#3b1740"/>
+      <stop offset="0%" stop-color="#050814"/>
+      <stop offset="40%" stop-color="#0f1130"/>
+      <stop offset="75%" stop-color="#24133b"/>
+      <stop offset="100%" stop-color="#3d1542"/>
     </linearGradient>
 
     <!-- Pirate Gold Gradient -->
     <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#fff176"/>
+      <stop offset="0%" stop-color="#fff59d"/>
       <stop offset="40%" stop-color="#fbc02d"/>
       <stop offset="80%" stop-color="#f57f17"/>
       <stop offset="100%" stop-color="#ff3d00"/>
     </linearGradient>
 
-    <!-- Conqueror Haki Energy Gradient -->
-    <linearGradient id="hakiGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#ff1744"/>
-      <stop offset="50%" stop-color="#d50000"/>
-      <stop offset="100%" stop-color="#210008"/>
+    <!-- Ocean Gradients -->
+    <linearGradient id="wave1" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#0284c7" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#072a4a"/>
     </linearGradient>
-
-    <!-- Ocean Wave Gradients -->
-    <linearGradient id="waveGrad1" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" stop-color="#0284c7" stop-opacity="0.85"/>
-      <stop offset="100%" stop-color="#082f49"/>
-    </linearGradient>
-
-    <linearGradient id="waveGrad2" x1="0%" y1="0%" x2="0%" y2="100%">
+    <linearGradient id="wave2" x1="0%" y1="0%" x2="0%" y2="100%">
       <stop offset="0%" stop-color="#0369a1" stop-opacity="0.9"/>
-      <stop offset="100%" stop-color="#0c1d37"/>
+      <stop offset="100%" stop-color="#0a192f"/>
     </linearGradient>
 
-    <linearGradient id="waveGrad3" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" stop-color="#075985"/>
-      <stop offset="100%" stop-color="#031024"/>
-    </linearGradient>
-
-    <!-- Moon Glow Filter -->
-    <filter id="moonGlow" x="-30%" y="-30%" width="160%" height="160%">
-      <feGaussianBlur stdDeviation="8" result="blur"/>
-      <feMerge>
-        <feMergeNode in="blur"/>
-        <feMergeNode in="SourceGraphic"/>
-      </feMerge>
-    </filter>
-
-    <!-- Haki Lightning Glow -->
-    <filter id="hakiGlow" x="-50%" y="-50%" width="200%" height="200%">
-      <feGaussianBlur stdDeviation="5" result="blur1"/>
+    <!-- Haki Glow -->
+    <filter id="hakiGlow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="4" result="blur1"/>
       <feGaussianBlur stdDeviation="2" result="blur2"/>
       <feMerge>
         <feMergeNode in="blur1"/>
@@ -59,8 +37,9 @@
       </feMerge>
     </filter>
 
-    <filter id="goldGlow" x="-20%" y="-20%" width="140%" height="140%">
-      <feGaussianBlur stdDeviation="4" result="blur"/>
+    <!-- Moon Glow -->
+    <filter id="moonGlow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="8" result="blur"/>
       <feMerge>
         <feMergeNode in="blur"/>
         <feMergeNode in="SourceGraphic"/>
@@ -69,164 +48,110 @@
   </defs>
 
   <style>
-    /* 60 FPS KEYFRAME ANIMATIONS */
+    @keyframes waveRoll {
+      0% { transform: translateX(0px); }
+      100% { transform: translateX(-470px); }
+    }
     @keyframes shipBob {
       0%, 100% { transform: translateY(0px) rotate(0deg); }
-      25% { transform: translateY(-7px) rotate(2.5deg); }
-      75% { transform: translateY(5px) rotate(-2.5deg); }
+      25% { transform: translateY(-6px) rotate(2deg); }
+      75% { transform: translateY(4px) rotate(-2deg); }
     }
-
-    @keyframes waveRoll1 {
-      0% { transform: translateX(0px); }
-      100% { transform: translateX(-460px); }
+    @keyframes luffyBounce {
+      0%, 100% { transform: translateY(0px); }
+      50% { transform: translateY(-5px); }
     }
-
-    @keyframes waveRoll2 {
-      0% { transform: translateX(0px); }
-      100% { transform: translateX(460px); }
+    @keyframes zoroAura {
+      0%, 100% { opacity: 0.4; filter: drop-shadow(0 0 6px #00e676); }
+      50% { opacity: 0.9; filter: drop-shadow(0 0 14px #00e676); }
     }
-
-    @keyframes shootingStar {
-      0% { transform: translate(0px, 0px) scale(0); opacity: 0; }
-      10% { opacity: 1; transform: translate(-30px, 20px) scale(1); }
-      30% { transform: translate(-180px, 120px) scale(0.2); opacity: 0; }
-      100% { transform: translate(-180px, 120px) scale(0); opacity: 0; }
-    }
-
-    @keyframes hakiLightning {
+    @keyframes hakiFlash {
       0%, 88%, 94%, 100% { opacity: 0; }
-      89%, 93% { opacity: 0.9; filter: drop-shadow(0 0 8px #ff1744); }
-      91% { opacity: 1; filter: drop-shadow(0 0 14px #ff0055); }
+      89%, 93% { opacity: 0.95; filter: drop-shadow(0 0 10px #ff1744); }
+      91% { opacity: 1; filter: drop-shadow(0 0 16px #ff0055); }
     }
-
-    @keyframes starTwinkle {
-      0%, 100% { opacity: 0.2; transform: scale(0.8); }
+    @keyframes starPulse {
+      0%, 100% { opacity: 0.3; }
       50% { opacity: 1; transform: scale(1.2); }
     }
-
-    @keyframes cloudDrift {
-      0% { transform: translateX(0px); }
-      100% { transform: translateX(-920px); }
+    @keyframes meteorPass {
+      0% { transform: translate(0, 0); opacity: 0; }
+      15% { opacity: 1; }
+      35% { transform: translate(-140px, 90px); opacity: 0; }
+      100% { transform: translate(-140px, 90px); opacity: 0; }
     }
 
-    @keyframes logPoseSpin {
-      0% { transform: rotate(0deg); }
-      20% { transform: rotate(35deg); }
-      40% { transform: rotate(-25deg); }
-      60% { transform: rotate(15deg); }
-      80% { transform: rotate(-10deg); }
-      100% { transform: rotate(0deg); }
-    }
-
-    @keyframes treasureSparkle {
-      0%, 100% { opacity: 0.2; transform: translateY(0px) scale(0.8); }
-      50% { opacity: 1; transform: translateY(-12px) scale(1.3); }
-    }
-
-    @keyframes goldPulse {
-      0%, 100% { filter: drop-shadow(0 0 4px #fbc02d); }
-      50% { filter: drop-shadow(0 0 14px #ff3d00); }
-    }
-
+    .wave-anim { animation: waveRoll 10s linear infinite; }
     .ship-anim { transform-origin: 740px 220px; animation: shipBob 4s ease-in-out infinite; }
-    .wave1 { animation: waveRoll1 12s linear infinite; }
-    .wave2 { animation: waveRoll2 9s linear infinite; }
-    .star-shoot { animation: shootingStar 6s ease-in infinite 2s; }
-    .star-shoot-2 { animation: shootingStar 8s ease-in infinite 5s; }
-    .haki-bolt { animation: hakiLightning 3.8s infinite; }
-    .haki-bolt-2 { animation: hakiLightning 4.5s infinite 1.2s; }
-    .needle { transform-origin: 850px 60px; animation: logPoseSpin 5s ease-in-out infinite; }
-    .star1 { animation: starTwinkle 2.5s ease-in-out infinite; }
-    .star2 { animation: starTwinkle 3.8s ease-in-out infinite 1s; }
-    .star3 { animation: starTwinkle 3.1s ease-in-out infinite 1.8s; }
-    .sparkle { animation: treasureSparkle 2s ease-in-out infinite; }
-    .title-pirate { font-family: 'Impact', 'Segoe UI Black', -apple-system, sans-serif; animation: goldPulse 4s infinite; }
+    .luffy-anim { animation: luffyBounce 2s ease-in-out infinite; }
+    .zoro-anim { animation: zoroAura 2.5s ease-in-out infinite; }
+    .haki-arc { animation: hakiFlash 3.6s infinite; }
+    .haki-arc-2 { animation: hakiFlash 4.8s infinite 1.6s; }
+    .star { animation: starPulse 3s ease-in-out infinite; }
+    .meteor { animation: meteorPass 7s ease-in infinite 1s; }
+    .title-font { font-family: 'Impact', 'Segoe UI Black', -apple-system, sans-serif; }
   </style>
 
-  <!-- Sky Canvas -->
-  <rect width="920" height="330" rx="16" fill="url(#skyGrad)"/>
+  <!-- Sky Background -->
+  <rect width="940" height="340" rx="16" fill="url(#skyGrad)"/>
 
-  <!-- Starry Night Background -->
-  <circle class="star1" cx="80" cy="40" r="1.5" fill="#ffffff"/>
-  <circle class="star2" cx="150" cy="80" r="2" fill="#fff59d"/>
-  <circle class="star3" cx="240" cy="30" r="1.2" fill="#ffffff"/>
-  <circle class="star1" cx="350" cy="65" r="2" fill="#ffe082"/>
-  <circle class="star2" cx="480" cy="35" r="1.8" fill="#ffffff"/>
-  <circle class="star3" cx="600" cy="50" r="2.2" fill="#fff59d"/>
-  <circle class="star1" cx="680" cy="25" r="1.5" fill="#ffffff"/>
-  <circle class="star2" cx="760" cy="70" r="2" fill="#ffe082"/>
-  <circle class="star3" cx="880" cy="30" r="1.8" fill="#ffffff"/>
+  <!-- Stars -->
+  <circle class="star" cx="100" cy="40" r="1.5" fill="#ffffff"/>
+  <circle class="star" cx="180" cy="70" r="2" fill="#fff59d"/>
+  <circle class="star" cx="290" cy="30" r="1.2" fill="#ffffff"/>
+  <circle class="star" cx="420" cy="50" r="2" fill="#ffe082"/>
+  <circle class="star" cx="560" cy="35" r="1.8" fill="#ffffff"/>
+  <circle class="star" cx="670" cy="60" r="1.5" fill="#fff59d"/>
+  <circle class="star" cx="890" cy="40" r="2" fill="#ffe082"/>
 
-  <!-- Grand Line Giant Glowing Moon -->
-  <g transform="translate(730, 20)">
-    <circle cx="50" cy="50" r="38" fill="#fff9c4" filter="url(#moonGlow)"/>
-    <circle cx="50" cy="50" r="36" fill="#fffde7"/>
-    <!-- Moon Craters -->
-    <circle cx="40" cy="42" r="7" fill="#fbc02d" opacity="0.18"/>
-    <circle cx="62" cy="55" r="9" fill="#fbc02d" opacity="0.15"/>
-    <circle cx="52" cy="68" r="5" fill="#fbc02d" opacity="0.15"/>
+  <!-- Meteor / Shooting Star -->
+  <g class="meteor" transform="translate(680, 20)">
+    <line x1="0" y1="0" x2="-45" y2="30" stroke="#fff59d" stroke-width="2" stroke-linecap="round"/>
   </g>
 
-  <!-- Shooting Stars / Meteors -->
-  <g class="star-shoot" transform="translate(650, 20)">
-    <line x1="0" y1="0" x2="-50" y2="35" stroke="#fff59d" stroke-width="2" stroke-linecap="round"/>
-  </g>
-  <g class="star-shoot-2" transform="translate(380, 10)">
-    <line x1="0" y1="0" x2="-60" y2="40" stroke="#ff80ab" stroke-width="2" stroke-linecap="round"/>
-  </g>
-
-  <!-- Conqueror's Haki Lightning Arcs (Red/Black Lightning) -->
-  <g class="haki-bolt" filter="url(#hakiGlow)">
-    <path d="M 120 70 L 140 100 L 125 115 L 160 145 L 140 155 L 180 190" stroke="#ff1744" stroke-width="2.5" fill="none" stroke-linecap="round"/>
-    <path d="M 130 65 L 150 95 L 135 110 L 170 140" stroke="#ffebee" stroke-width="1" fill="none"/>
-  </g>
-  <g class="haki-bolt-2" filter="url(#hakiGlow)">
-    <path d="M 520 80 L 495 115 L 515 130 L 480 170 L 500 180 L 470 215" stroke="#ff0055" stroke-width="2.5" fill="none" stroke-linecap="round"/>
-    <path d="M 515 85 L 490 120 L 510 135 L 480 170" stroke="#ffffff" stroke-width="1" fill="none"/>
+  <!-- Giant Glowing Moon -->
+  <g transform="translate(760, 20)">
+    <circle cx="45" cy="45" r="36" fill="#fffde7" filter="url(#moonGlow)"/>
+    <circle cx="45" cy="45" r="34" fill="#fff9c4"/>
+    <circle cx="36" cy="38" r="6" fill="#fbc02d" opacity="0.15"/>
+    <circle cx="56" cy="48" r="8" fill="#fbc02d" opacity="0.12"/>
   </g>
 
-  <!-- Top One Piece Japanese & English Header -->
-  <g transform="translate(48, 42)">
-    <!-- Jolly Roger Straw Hat Mini Icon -->
-    <g transform="translate(0, -6)">
-      <!-- Straw Hat -->
-      <ellipse cx="14" cy="12" rx="14" ry="4" fill="#fbc02d"/>
-      <path d="M 5 12 Q 14 0 23 12 Z" fill="#fdd835"/>
-      <path d="M 6 10 Q 14 6 22 10 L 23 12 Q 14 8 5 12 Z" fill="#d32f2f"/>
-      <!-- Skull -->
-      <circle cx="14" cy="18" r="6" fill="#ffffff"/>
-      <circle cx="12" cy="17" r="1.2" fill="#000000"/>
-      <circle cx="16" cy="17" r="1.2" fill="#000000"/>
-      <path d="M 11 21 L 17 21" stroke="#000000" stroke-width="0.8"/>
-    </g>
-    <text x="36" y="16" fill="#fbc02d" font-family="'Segoe UI', -apple-system, sans-serif" font-weight="900" font-size="12" letter-spacing="2">
-      海賊王 • GRAND LINE EXPEDITION // SDE &amp; AI ARCHITECT
+  <!-- Conqueror's Haki Lightning (Red/Black) -->
+  <g class="haki-arc" filter="url(#hakiGlow)">
+    <path d="M 130 65 L 155 100 L 135 120 L 175 160 L 150 175 L 195 215" stroke="#ff1744" stroke-width="3" fill="none"/>
+    <path d="M 135 65 L 160 100 L 140 120 L 180 160" stroke="#ffffff" stroke-width="1.2" fill="none"/>
+  </g>
+  <g class="haki-arc-2" filter="url(#hakiGlow)">
+    <path d="M 520 70 L 490 110 L 510 130 L 475 170 L 495 185 L 460 225" stroke="#ff0055" stroke-width="3" fill="none"/>
+  </g>
+
+  <!-- Header Category -->
+  <g transform="translate(48, 38)">
+    <text x="0" y="16" fill="#fbc02d" font-family="'Segoe UI', -apple-system, sans-serif" font-weight="900" font-size="12" letter-spacing="2">
+      海賊王 • THE GRAND LINE OF FULL-STACK &amp; AI ARCHITECTURE
     </text>
   </g>
 
-  <!-- Main Hero Title: ABHIJEET NAYAK -->
+  <!-- Main Hero Name: ABHIJEET NAYAK -->
   <g transform="translate(48, 126)">
-    <!-- Golden Flame Glow -->
-    <text x="0" y="0" fill="url(#goldGrad)" class="title-pirate" font-size="54" letter-spacing="3" filter="url(#goldGlow)">
-      ABHIJEET NAYAK
-    </text>
-    <text x="0" y="0" fill="url(#goldGrad)" class="title-pirate" font-size="54" letter-spacing="3">
+    <text x="0" y="0" fill="url(#goldGrad)" class="title-font" font-size="54" letter-spacing="3">
       ABHIJEET NAYAK
     </text>
   </g>
 
-  <!-- One Piece Themed Tagline -->
+  <!-- One Piece Tagline -->
   <g transform="translate(50, 162)">
-    <text x="0" y="0" fill="#fde047" font-family="'Fira Code', 'Courier New', monospace" font-size="13.5" font-weight="700" letter-spacing="0.5">
+    <text x="0" y="0" fill="#fde047" font-family="'Fira Code', monospace" font-size="13.5" font-weight="700" letter-spacing="0.5">
       <tspan fill="#ff3d00">⚔️ </tspan>CONQUEROR'S CODE <tspan fill="#94a3b8">|</tspan> FULL-STACK ARCHITECT <tspan fill="#94a3b8">•</tspan> NEXT.JS <tspan fill="#94a3b8">•</tspan> AI RAG <tspan fill="#94a3b8">•</tspan> DISTRIBUTED SYSTEMS
     </text>
   </g>
 
-  <!-- One Piece Bounty & Achievements Row -->
+  <!-- Bounty Badges -->
   <g transform="translate(50, 192)">
-    <!-- Bounty Badge: ฿ 3,000,000,000 -->
+    <!-- Bounty: ฿ 3,000,000,000 -->
     <g transform="translate(0, 0)">
-      <rect width="180" height="32" rx="6" fill="#1f1124" stroke="#fbc02d" stroke-width="1.2"/>
+      <rect width="180" height="32" rx="6" fill="#1b0f22" stroke="#fbc02d" stroke-width="1.2"/>
       <text x="12" y="21" fill="#fbc02d" font-family="'Segoe UI', sans-serif" font-weight="800" font-size="12">
         💰 BOUNTY: ฿ 3,000,000,000
       </text>
@@ -234,7 +159,7 @@
 
     <!-- Hackfest Top 50 -->
     <g transform="translate(190, 0)">
-      <rect width="185" height="32" rx="6" fill="#24111d" stroke="#ff1744" stroke-width="1.2"/>
+      <rect width="185" height="32" rx="6" fill="#240f1a" stroke="#ff1744" stroke-width="1.2"/>
       <text x="12" y="21" fill="#ff4d6d" font-family="'Segoe UI', sans-serif" font-weight="800" font-size="12">
         🏆 Top 50 / 1100+ Hackfest
       </text>
@@ -242,7 +167,7 @@
 
     <!-- BCA 8.9 CGPA -->
     <g transform="translate(385, 0)">
-      <rect width="145" height="32" rx="6" fill="#0d1f33" stroke="#38bdf8" stroke-width="1.2"/>
+      <rect width="145" height="32" rx="6" fill="#0d1b30" stroke="#38bdf8" stroke-width="1.2"/>
       <text x="12" y="21" fill="#38bdf8" font-family="'Segoe UI', sans-serif" font-weight="800" font-size="12">
         🎓 BCA • 8.9 CGPA
       </text>
@@ -250,97 +175,96 @@
 
     <!-- 4x Shipped -->
     <g transform="translate(540, 0)">
-      <rect width="165" height="32" rx="6" fill="#0c241e" stroke="#34d399" stroke-width="1.2"/>
+      <rect width="165" height="32" rx="6" fill="#0c241a" stroke="#34d399" stroke-width="1.2"/>
       <text x="12" y="21" fill="#34d399" font-family="'Segoe UI', sans-serif" font-weight="800" font-size="12">
         ⚡ 4x Prod Expeditions
       </text>
     </g>
   </g>
 
-  <!-- Log Pose Nautical Compass (Top Right) -->
-  <g class="log-pose" transform="translate(850, 60)">
-    <!-- Brass Case -->
-    <circle cx="0" cy="0" r="26" fill="#2a1a08" stroke="#fbc02d" stroke-width="2"/>
-    <circle cx="0" cy="0" r="22" fill="#0a192f" stroke="#e65100" stroke-width="1"/>
-    <!-- Compass Glass Sphere -->
-    <circle cx="0" cy="0" r="18" fill="#38bdf8" opacity="0.15"/>
-    <!-- Compass Markings -->
-    <line x1="0" y1="-18" x2="0" y2="18" stroke="#fbc02d" stroke-width="0.8" opacity="0.6"/>
-    <line x1="-18" y1="0" x2="18" y2="0" stroke="#fbc02d" stroke-width="0.8" opacity="0.6"/>
-    <!-- Animated Needle -->
-    <g class="needle">
-      <polygon points="0,-16 4,0 0,2 -4,0" fill="#ff1744"/>
-      <polygon points="0,16 4,0 0,-2 -4,0" fill="#f8fafc"/>
-      <circle cx="0" cy="0" r="3" fill="#fbc02d"/>
-    </g>
-    <text x="0" y="38" text-anchor="middle" fill="#fbc02d" font-family="'Segoe UI', sans-serif" font-size="9" font-weight="800" letter-spacing="1">LOG POSE</text>
-  </g>
-
   <!-- ============================================================= -->
-  <!-- GRAND LINE OCEAN WAVES & BOBBING PIRATE SHIP (THOUSAND SUNNY) -->
+  <!-- REAL ONE PIECE CHARACTERS: LUFFY (GEAR 5) & ZORO ON SUNNY     -->
   <!-- ============================================================= -->
 
-  <!-- Wave Layer 3 (Deep Ocean Horizon) -->
-  <g transform="translate(0, 235)">
-    <path d="M 0 35 C 120 20 200 45 320 30 C 440 15 520 40 640 25 C 760 10 840 35 920 20 L 920 100 L 0 100 Z" fill="url(#waveGrad3)"/>
-  </g>
-
-  <!-- Bobbing Pirate Ship (Thousand Sunny / Going Merry Silhouette with Straw Hat Sails) -->
-  <g class="ship-anim" transform="translate(730, 185)">
+  <!-- Thousand Sunny Ship with Real Luffy & Zoro -->
+  <g class="ship-anim" transform="translate(710, 160)">
     <!-- Ship Hull -->
-    <path d="M 0 45 Q 25 60 70 58 Q 85 45 90 35 L 5 35 Z" fill="#5d4037" stroke="#3e2723" stroke-width="1.5"/>
-    <!-- Hull Gold Trim -->
-    <path d="M 4 40 Q 40 52 82 40" stroke="#fbc02d" stroke-width="2" fill="none"/>
-    <!-- Sunny Figurehead Lion/Sun Glow -->
-    <circle cx="88" cy="34" r="8" fill="#fbc02d" filter="url(#goldGlow)"/>
-    <circle cx="88" cy="34" r="5" fill="#e65100"/>
-    <circle cx="88" cy="34" r="2.5" fill="#ffffff"/>
-    <!-- Masts -->
-    <line x1="30" y1="35" x2="30" y2="2" stroke="#4e342e" stroke-width="2.5"/>
-    <line x1="60" y1="35" x2="60" y2="8" stroke="#4e342e" stroke-width="2"/>
-    <!-- Main Sail with Jolly Roger Straw Hat Face -->
-    <path d="M 12 8 Q 30 14 48 8 L 46 28 Q 30 32 14 28 Z" fill="#fffde7" stroke="#d7ccc8" stroke-width="1"/>
-    <!-- Straw Hat Skull on Sail -->
-    <circle cx="30" cy="18" r="4.5" fill="#212121"/>
-    <ellipse cx="30" cy="15" rx="7" ry="2" fill="#fbc02d"/>
-    <!-- Front Sail -->
-    <path d="M 48 12 Q 60 16 72 12 L 70 28 Q 60 30 50 28 Z" fill="#fffde7"/>
-    <!-- Pirate Flag at Top of Mast -->
-    <path d="M 30 2 L 40 5 L 30 8 Z" fill="#d32f2f"/>
+    <path d="M 0 65 Q 35 85 95 82 Q 115 65 125 50 L 10 50 Z" fill="#5d4037" stroke="#3e2723" stroke-width="1.5"/>
+    <path d="M 8 58 Q 55 72 112 56" stroke="#fbc02d" stroke-width="2.5" fill="none"/>
+    
+    <!-- Thousand Sunny Lion Figurehead (Sunny Head) -->
+    <circle cx="124" cy="48" r="12" fill="#fbc02d"/>
+    <circle cx="124" cy="48" r="8" fill="#e65100"/>
+    <polygon points="124,32 127,38 121,38" fill="#fbc02d"/>
+    <polygon points="138,42 132,44 134,39" fill="#fbc02d"/>
+    <polygon points="138,55 132,53 134,58" fill="#fbc02d"/>
+    <polygon points="124,64 127,58 121,58" fill="#fbc02d"/>
+    <circle cx="124" cy="48" r="3" fill="#ffffff"/>
+
+    <!-- Ship Mast -->
+    <line x1="45" y1="50" x2="45" y2="2" stroke="#4e342e" stroke-width="3"/>
+    
+    <!-- Sail with Straw Hat Skull -->
+    <path d="M 20 8 Q 45 16 70 8 L 68 36 Q 45 42 22 36 Z" fill="#fffde7" stroke="#d7ccc8" stroke-width="1"/>
+    <!-- Jolly Roger Straw Hat Logo -->
+    <circle cx="45" cy="22" r="6" fill="#212121"/>
+    <ellipse cx="45" cy="18" rx="9" ry="2.5" fill="#fbc02d"/>
+    <circle cx="43" cy="21" r="1" fill="#ffffff"/>
+    <circle cx="47" cy="21" r="1" fill="#ffffff"/>
+
+    <!-- CHARACTER 1: MONKEY D. LUFFY (GEAR 5 / STRAW HAT POSE) -->
+    <g class="luffy-anim" transform="translate(75, 20)">
+      <!-- Gear 5 White Cloud Aura -->
+      <ellipse cx="14" cy="18" rx="16" ry="14" fill="#ffffff" opacity="0.4"/>
+      <!-- Straw Hat -->
+      <ellipse cx="14" cy="8" rx="15" ry="4" fill="#fbc02d" stroke="#e65100" stroke-width="0.8"/>
+      <path d="M 6 8 Q 14 -1 22 8 Z" fill="#fbc02d"/>
+      <path d="M 6 8 Q 14 5 22 8 Z" fill="#d32f2f"/>
+      <!-- Luffy Face with Big Grin -->
+      <circle cx="14" cy="14" r="8" fill="#ffcc80"/>
+      <!-- Eye Scar Under Left Eye -->
+      <line x1="10" y1="15" x2="10" y2="18" stroke="#5d4037" stroke-width="0.8"/>
+      <!-- Big Laughing Smile -->
+      <path d="M 9 14 Q 14 20 19 14 Z" fill="#d32f2f"/>
+      <path d="M 10 14 Q 14 17 18 14 Z" fill="#ffffff"/>
+      <!-- Eyes (Happy Arcs) -->
+      <path d="M 9 12 Q 11 9 12 12" stroke="#212121" stroke-width="1" fill="none"/>
+      <path d="M 16 12 Q 17 9 19 12" stroke="#212121" stroke-width="1" fill="none"/>
+      <!-- Red Vest -->
+      <path d="M 7 22 L 21 22 L 20 34 L 8 34 Z" fill="#d32f2f"/>
+      <line x1="14" y1="22" x2="14" y2="34" stroke="#ffcc80" stroke-width="3"/>
+    </g>
+
+    <!-- CHARACTER 2: RORONOA ZORO (SANTORYU THREE SWORDS & GREEN AURA) -->
+    <g class="zoro-anim" transform="translate(18, 22)">
+      <!-- Green Demon Aura -->
+      <ellipse cx="12" cy="18" rx="14" ry="12" fill="#00e676" opacity="0.3"/>
+      <!-- Green Hair / Bandanna -->
+      <ellipse cx="12" cy="12" rx="7" ry="6" fill="#2e7d32"/>
+      <rect x="5" y="11" width="14" height="3" fill="#1b5e20"/>
+      <!-- Face -->
+      <circle cx="12" cy="16" r="6" fill="#ffcc80"/>
+      <!-- Eye Scar -->
+      <line x1="9" y1="13" x2="9" y2="18" stroke="#1b5e20" stroke-width="0.8"/>
+      <!-- Sword in Mouth (Wado Ichimonji) -->
+      <line x1="-4" y1="18" x2="28" y2="18" stroke="#ffffff" stroke-width="1.8"/>
+      <line x1="9" y1="18" x2="15" y2="18" stroke="#fbc02d" stroke-width="2.2"/>
+      <!-- Green Harami / Coat -->
+      <rect x="6" y="22" width="12" height="14" fill="#1b5e20"/>
+      <rect x="8" y="25" width="8" height="4" fill="#a5d6a7"/>
+      <!-- Two Hand Swords -->
+      <line x1="2" y1="14" x2="-8" y2="32" stroke="#00e676" stroke-width="1.5"/>
+      <line x1="22" y1="14" x2="32" y2="32" stroke="#00e676" stroke-width="1.5"/>
+    </g>
   </g>
 
-  <!-- Wave Layer 2 (Rolling Mid Waves) -->
-  <g class="wave2" transform="translate(0, 245)">
-    <path d="M -460 30 Q -345 5 -230 30 Q -115 55 0 30 Q 115 5 230 30 Q 345 55 460 30 Q 575 5 690 30 Q 805 55 920 30 Q 1035 5 1150 30 Q 1265 55 1380 30 L 1380 90 L -460 90 Z" fill="url(#waveGrad2)"/>
+  <!-- Rolling Ocean Waves -->
+  <g class="wave-anim" transform="translate(0, 260)">
+    <path d="M 0 25 Q 117 0 235 25 Q 352 50 470 25 Q 587 0 705 25 Q 822 50 940 25 Q 1057 0 1175 25 Q 1292 50 1410 25 L 1410 80 L 0 80 Z" fill="url(#wave1)"/>
+    <path d="M 0 25 Q 117 0 235 25 Q 352 50 470 25 Q 587 0 705 25 Q 822 50 940 25 Q 1057 0 1175 25 Q 1292 50 1410 25" stroke="#e0f2fe" stroke-width="2.5" fill="none" opacity="0.8"/>
   </g>
 
-  <!-- Treasure Chest & Code Gems on Shore (Left) -->
-  <g transform="translate(50, 245)">
-    <!-- Chest Base -->
-    <rect x="0" y="16" width="34" height="22" rx="4" fill="#6d4c41" stroke="#fbc02d" stroke-width="1.5"/>
-    <!-- Chest Lid Open -->
-    <path d="M -2 16 L 36 8 L 34 2 L -4 10 Z" fill="#8d6e63" stroke="#fbc02d" stroke-width="1.5"/>
-    <circle cx="17" cy="27" r="3" fill="#fbc02d"/>
-    <!-- Code Sparkles Popping Out of Chest -->
-    <text class="sparkle" x="4" y="4" fill="#fbc02d" font-family="'Fira Code', monospace" font-size="12" font-weight="bold">&lt;/&gt;</text>
-    <text class="sparkle" x="24" y="-4" fill="#38bdf8" font-family="'Fira Code', monospace" font-size="11" font-weight="bold">{ }</text>
-    <text class="sparkle" x="-8" y="-6" fill="#ff1744" font-family="'Segoe UI', sans-serif" font-size="12" font-weight="bold">⚡</text>
-  </g>
-
-  <!-- Wave Layer 1 (Foreground Cresting Waves with Foam) -->
-  <g class="wave1" transform="translate(0, 265)">
-    <path d="M 0 25 Q 115 0 230 25 Q 345 50 460 25 Q 575 0 690 25 Q 805 50 920 25 Q 1035 0 1150 25 Q 1265 50 1380 25 L 1380 70 L 0 70 Z" fill="url(#waveGrad1)"/>
-    <!-- Wave Sea Foam Highlights -->
-    <path d="M 0 25 Q 115 0 230 25 Q 345 50 460 25 Q 575 0 690 25 Q 805 50 920 25 Q 1035 0 1150 25 Q 1265 50 1380 25" stroke="#e0f2fe" stroke-width="2.5" fill="none" opacity="0.75"/>
-  </g>
-
-  <!-- Outer Grand Line Gold & Crimson Border Frame -->
-  <rect x="2" y="2" width="916" height="326" rx="15" fill="none" stroke="#fbc02d" stroke-width="1.8" stroke-opacity="0.6"/>
-  <rect x="6" y="6" width="908" height="318" rx="12" fill="none" stroke="#ff1744" stroke-width="0.8" stroke-opacity="0.4"/>
-
-  <!-- Pirate Corner Brackets -->
-  <path d="M 4 28 L 4 10 L 28 10" fill="none" stroke="#fbc02d" stroke-width="3.5" filter="url(#goldGlow)"/>
-  <path d="M 916 28 L 916 10 L 892 10" fill="none" stroke="#fbc02d" stroke-width="3.5" filter="url(#goldGlow)"/>
-  <path d="M 4 302 L 4 320 L 28 320" fill="none" stroke="#fbc02d" stroke-width="3.5" filter="url(#goldGlow)"/>
-  <path d="M 916 302 L 916 320 L 892 320" fill="none" stroke="#fbc02d" stroke-width="3.5" filter="url(#goldGlow)"/>
+  <!-- Golden Outer Frame -->
+  <rect x="2" y="2" width="936" height="336" rx="15" fill="none" stroke="#fbc02d" stroke-width="1.8" stroke-opacity="0.6"/>
+  <rect x="6" y="6" width="928" height="328" rx="12" fill="none" stroke="#ff1744" stroke-width="0.8" stroke-opacity="0.4"/>
 </svg>
