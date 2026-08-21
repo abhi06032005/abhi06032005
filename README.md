@@ -1,148 +1,148 @@
-<div align="center">
+<p align="center">
+  <img src="./assets/hero-banner.svg" width="100%" alt="Abhijeet Nayak Banner" />
+</p>
 
-# 👨‍💻 Abhijeet Nayak
+<p align="center">
+  <a href="https://github.com/abhi06032005">
+    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=20&pause=1000&color=00F0FF&center=true&vCenter=true&width=560&lines=Full-Stack+Developer+%26+AI+Systems+Architect;Engineering+Scalable+Distributed+Applications;Building+Production+RAG+%26+LLM+Pipelines;Crafting+Sub-16ms+Real-Time+WebSocket+Systems;Open+Source+Contributor+%7C+Top+50+Hackfest" alt="Typing SVG" />
+  </a>
+</p>
 
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-<img src="./assets/abhi.jpg" width="360" alt="Abhijeet Nayak" style="border-radius: 12px;"/>
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+<p align="center">
+  <a href="https://linkedin.com/in/abhijeet-nayak-9706bb25a" target="_blank">
+    <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" />
+  </a>
+  &nbsp;
+  <a href="mailto:abhijeetnayak478@gmail.com" target="_blank">
+    <img src="https://img.shields.io/badge/Email-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" />
+  </a>
+  &nbsp;
+  <a href="https://github.com/abhi06032005" target="_blank">
+    <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" />
+  </a>
+  &nbsp;
+  <img src="https://komarev.com/ghpvc/?username=abhi06032005&label=Profile%20Views&color=7000ff&style=for-the-badge" alt="Profile Views" />
+</p>
 
 ---
 
-### Full-Stack Developer & AI Systems Architect
+### 💻 System Terminal // Profile Telemetry
 
-**BCA • 8.9 CGPA** | India 🇮🇳
+<p align="center">
+  <img src="./assets/cyber-terminal.svg" width="100%" alt="Interactive Cyber Terminal" />
+</p>
 
-<a href="https://linkedin.com/in/abhijeet-nayak-9706bb25a">
-  <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/>
-</a>
-<a href="mailto:abhijeetnayak478@gmail.com">
-  <img src="https://img.shields.io/badge/Email-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Email"/>
-</a>
-<a href="https://github.com/abhi06032005">
-  <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub"/>
-</a>
+---
+
+### 🚀 Highlights & Production Impact
+
+| Metric / Milestone | Detail & Impact |
+| :--- | :--- |
+| 🏆 **Hackfest Finalist** | Ranked **Top 50** out of 1,100+ competing engineering teams nationwide |
+| ⚡ **Performance Engineering** | Rebuilt official institutional platform achieving **25–35% faster load times** & **95% CMS turnaround reduction** |
+| 🧠 **AI & Distributed RAG** | Production vector search pipelines powered by **Qdrant, BullMQ, Groq & Cohere** with sub-30s report synthesis |
+| 🎯 **Algorithmic Problem Solving** | **200+ DSA problems solved**, 5-Star HackerRank in SQL & Problem Solving, 1st rank / 4,000+ quiz participants |
+
+---
+
+### 🛠️ Technology Stack & Engineering Arsenal
+
+<div align="center">
+
+#### Languages & Runtimes
+<p align="center">
+  <a href="https://skillicons.dev">
+    <img src="https://skillicons.dev/icons?i=ts,js,py,cpp,java,postgres" alt="Languages" />
+  </a>
+</p>
+
+#### Frontend & UI Architecture
+<p align="center">
+  <a href="https://skillicons.dev">
+    <img src="https://skillicons.dev/icons?i=react,nextjs,tailwind,redux,vite,html,css" alt="Frontend" />
+  </a>
+</p>
+
+#### Backend, Databases & Event Queues
+<p align="center">
+  <a href="https://skillicons.dev">
+    <img src="https://skillicons.dev/icons?i=nodejs,express,mongodb,prisma,redis" alt="Backend & Databases" />
+  </a>
+</p>
+
+#### Cloud, AI Systems & DevOps
+<p align="center">
+  <a href="https://skillicons.dev">
+    <img src="https://skillicons.dev/icons?i=aws,docker,cloudflare,git,github,linux,postman,vscode" alt="DevOps & Tools" />
+  </a>
+</p>
 
 </div>
 
 ---
 
-## 💼 About Me
+### 🔮 Featured Projects
 
-I'm a passionate full-stack developer specializing in scalable production systems and AI-powered applications. I transform ideas into performant, user-centric products with a focus on clean architecture and measurable impact.
+```
+┌── [ 🛡️ FinGuard AI ] ────────────────────────────────────────────────────────┐
+│  • Full-stack financial intelligence platform with automated reconciliation  │
+│  • Secure Razorpay & SHA-256 HMAC authentication with zero payment drop-offs │
+│  • LLM pipeline converting raw filings to insights in under 30 seconds       │
+│  • Stack: Next.js, Node.js, PostgreSQL, Prisma, Tailwind CSS, LLMs           │
+└──────────────────────────────────────────────────────────────────────────────┘
 
-**What drives me:**
-- Building systems that users love and engineers maintain
-- Solving complex problems with elegant solutions  
-- Continuously learning new technologies and best practices
-- Contributing to open-source and mentoring others
+┌── [ 📄 Contextual PDF RAG System ] ──────────────────────────────────────────┐
+│  • Retrieval-Augmented Generation system with multi-document vector search   │
+│  • High-throughput context retrieval via Qdrant Vector DB & BullMQ workers   │
+│  • Grounded responses with precise passage citations & source verification   │
+│  • Stack: Python, Qdrant, Docker, BullMQ, Redis, Groq                        │
+└──────────────────────────────────────────────────────────────────────────────┘
 
----
-
-## 🛠 Tech Stack
-
-**Languages:** TypeScript • JavaScript • Python • C++ • Java • SQL
-
-**Frontend:** React • Next.js • Tailwind CSS • Redux • Vite • HTML5 • CSS3
-
-**Backend:** Node.js • Express • PostgreSQL • MongoDB • Prisma • Redis
-
-**Cloud & DevOps:** AWS • Docker • Cloudflare • Git • GitHub • Linux
-
-**AI & Specializations:** Qdrant (Vector Search) • BullMQ (Job Queues) • WebSockets • RAG Pipelines • LLM Integration • Cohere • Groq • HMAC Authentication • Clerk • Zod Validation
-
----
-
-## 📊 Stats & Activity
-
-<div align="center">
-
-<a href="https://github.com/abhi06032005">
-  <img height="170" src="https://github-readme-stats.vercel.app/api?username=abhi06032005&show_icons=true&theme=dark&hide_border=true&count_private=true" alt="GitHub Stats" />
-</a>
-<a href="https://github.com/abhi06032005">
-  <img height="170" src="https://github-readme-stats.vercel.app/api/top-langs/?username=abhi06032005&layout=compact&theme=dark&hide_border=true" alt="Top Languages" />
-</a>
-
-<br/>
-
-<a href="https://github.com/abhi06032005">
-  <img src="https://streak-stats.demolab.com?user=abhi06032005&theme=dark&hide_border=true" alt="GitHub Streak" />
-</a>
-
-</div>
+┌── [ ⚡ Real-Time Collaboration Canvas ] ─────────────────────────────────────┐
+│  • Low-latency multiplayer whiteboard with real-time cursor tracking        │
+│  • Sub-16ms WebSocket communication layer with room-based session scaling    │
+│  • Room code generation, JWT authentication & persistent canvas state        │
+│  • Stack: React, Node.js, WebSockets, Redis, Canvas API                      │
+└──────────────────────────────────────────────────────────────────────────────┘
+```
 
 ---
 
-## 💼 Work Experience
+### 📊 GitHub Telemetry & Activity
 
-**Dec 2025 – Mar 2026** | SDE Intern @ ITJOBXS
-- Built responsive UI components for mobile, tablet, and desktop platforms
-- Implemented authentication and verification flows
-- Enhanced UI responsiveness and user experience
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api?username=abhi06032005&show_icons=true&theme=tokyonight&hide_border=true&count_private=true&bg_color=0a0a14&title_color=00f0ff&icon_color=38bdf8&text_color=94a3b8" height="165" alt="GitHub Stats" />
+  &nbsp;&nbsp;
+  <img src="https://streak-stats.demolab.com?user=abhi06032005&theme=tokyonight&hide_border=true&background=0a0a14&ring=00f0ff&fire=ff007f&currStreakLabel=00f0ff" height="165" alt="GitHub Streak" />
+</p>
 
-**Jan 2026 – Apr 2026** | Freelance Developer @ MSRS, Udupi
-- **Rebuilt official college website** → 25–35% faster load times
-- **Built CMS portal** → 95% reduction in content update time
-- **Boosted metrics** → 15–20% increase in average session duration
-- Deployed and optimized infrastructure on Cloudflare
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=abhi06032005&layout=compact&theme=tokyonight&hide_border=true&bg_color=0a0a14&title_color=00f0ff&text_color=94a3b8" alt="Top Languages" />
+</p>
 
----
-
-## 🏆 Achievements & Recognition
-
-| 🥇 | **Top 50 Finalist** — Hackfest (1,100+ teams competing) |
-| 📊 | **2nd Rank** — All-India Stock Trading Competition |
-| 🧠 | **1st Rank** — Inter-College Quiz (4,000+ participants) |
-| ⭐ | **5-Star Rating** — HackerRank (SQL & Problem Solving) |
-| ✅ | **SQL Certified** — HackerRank Intermediate Level |
-| 💻 | **200+ DSA Problems** — Solved across multiple platforms |
+<p align="center">
+  <a href="https://github.com/ryo-ma/github-profile-trophy">
+    <img src="https://github-profile-trophy.vercel.app/?username=abhi06032005&theme=tokyonight&no-frame=true&no-bg=true&margin_w=4" alt="GitHub Trophies" />
+  </a>
+</p>
 
 ---
 
-## 🚀 Key Projects & Impact
+### 🎵 In The Flow State
 
-**FinGuard AI** — Full-stack financial research platform
-- Secure payment system with Razorpay & SHA-256 HMAC authentication
-- Automated reconciliation engine detecting & resolving stuck payments  
-- LLM pipeline converting financial filings to PDFs in < 30 seconds (research time cut from hours)
-
-**AI-Powered PDF Chat** — Retrieval-Augmented Generation (RAG) system
-- Context-aware Q&A using Qdrant vector database
-- Dockerized infrastructure with BullMQ job queues
-- Source-grounded responses with exact passage citations
-
-**Real-Time Collaboration Platform** — Multiplayer drawing & chat
-- Sub-16ms pointer response time for smooth real-time interaction
-- WebSocket-based architecture with JWT authentication
-- Multi-user session management via room codes
-
-**BharatOrigin** — Indian product discovery platform
-- Geo-based search for Indian alternatives
-- Barcode scanning integration
-- Real-time local & web search combination
+<p align="center">
+  <img src="./assets/now-playing.svg" width="560" alt="Now Playing Music Stream" />
+</p>
 
 ---
 
-## 🤝 Get In Touch
+### 🐍 Contribution Stream
 
-Have an exciting project or just want to chat? Feel free to reach out!
+<!-- Generated automatically via Platane/snk GitHub Action -->
+<p align="center">
+  <img src="https://raw.githubusercontent.com/abhi06032005/abhi06032005/output/github-contribution-grid-snake-dark.svg" alt="Contribution Snake Animation" />
+</p>
 
-<div align="center">
-
-<a href="https://linkedin.com/in/abhijeet-nayak-9706bb25a">
-  <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white"/>
-</a>
-&nbsp;
-<a href="mailto:abhijeetnayak478@gmail.com">
-  <img src="https://img.shields.io/badge/Email-EA4335?style=for-the-badge&logo=gmail&logoColor=white"/>
-</a>
-&nbsp;
-<a href="https://github.com/abhi06032005">
-  <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white"/>
-</a>
-
-</div>
-
-<div align="center">
-  <sub>Always learning, always building. Let's create something amazing together! 🚀</sub>
-</div>
+<p align="center">
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&custom_color=00f0ff,7000ff,ff007f&height=100&section=footer" width="100%" alt="Footer Banner" />
+</p>
