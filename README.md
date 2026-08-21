@@ -2,7 +2,11 @@
 
 # 👨‍💻 Abhijeet Nayak
 
-<img src="./assets/abhi.jpg" width="280" alt="Abhijeet Nayak" style="border-radius: 12px;"/>
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+<img src="./assets/abhi.jpg" width="360" alt="Abhijeet Nayak" style="border-radius: 12px;"/>
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+---
 
 ### Full-Stack Developer & AI Systems Architect
 
