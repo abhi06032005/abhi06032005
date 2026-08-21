@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="./assets/hero-banner.svg" width="100%" alt="Abhijeet Nayak Banner" />
+  <img src="https://raw.githubusercontent.com/abhi06032005/abhi06032005/main/assets/hero-banner.svg" width="100%" alt="Abhijeet Nayak Banner" />
 </p>
 
 <p align="center">
@@ -29,7 +29,7 @@
 ### 💻 System Terminal // Profile Telemetry
 
 <p align="center">
-  <img src="./assets/cyber-terminal.svg" width="100%" alt="Interactive Cyber Terminal" />
+  <img src="https://raw.githubusercontent.com/abhi06032005/abhi06032005/main/assets/cyber-terminal.svg" width="100%" alt="Interactive Cyber Terminal" />
 </p>
 
 ---
