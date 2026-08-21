@@ -1,145 +1,47 @@
-<p align="center">
-  <img src="https://raw.githubusercontent.com/abhi06032005/abhi06032005/main/assets/hero-banner.svg" width="100%" alt="Abhijeet Nayak Banner" />
+﻿<p align="center">
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:000000,100:1a1a1a&height=160&section=header&text=Abhijeet%20Nayak&fontSize=38&fontColor=ffffff&animation=fadeIn&fontAlignY=42&desc=Full-Stack%20Developer%20%C2%B7%20AI%20Systems&descSize=16&descAlignY=62&descAlign=50" width="100%" />
 </p>
 
 <p align="center">
-  <a href="https://github.com/abhi06032005">
-    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=20&pause=1000&color=FFFFFF&center=true&vCenter=true&width=590&lines=Full-Stack+Developer+%26+AI+Systems+Architect;Python+%26+Intelligent+RAG+Pipeline+Engineering;Qdrant+Vector+Retrieval+%26+Distributed+Systems;Crafting+Sub-16ms+Real-Time+WebSocket+Protocols;Open+Source+Contributor+%26+System+Builder" alt="Typing SVG" />
-  </a>
-</p>
-
-<p align="center">
-  <a href="https://linkedin.com/in/abhijeet-nayak-9706bb25a" target="_blank">
-    <img src="https://img.shields.io/badge/LinkedIn-000000?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" />
+  <a href="https://linkedin.com/in/abhijeet-nayak-9706bb25a">
+    <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=flat-square&logo=linkedin&logoColor=white" />
   </a>
   &nbsp;
-  <a href="mailto:abhijeetnayak478@gmail.com" target="_blank">
-    <img src="https://img.shields.io/badge/Email-000000?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" />
+  <a href="mailto:abhijeetnayak478@gmail.com">
+    <img src="https://img.shields.io/badge/Email-EA4335?style=flat-square&logo=gmail&logoColor=white" />
   </a>
   &nbsp;
-  <a href="https://github.com/abhi06032005" target="_blank">
-    <img src="https://img.shields.io/badge/GitHub-000000?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" />
-  </a>
+  <img src="https://komarev.com/ghpvc/?username=abhi06032005&style=flat-square&color=555" />
+</p>
+
+<br/>
+
+<p align="center">
+  <img src="https://skillicons.dev/icons?i=ts,js,py,react,nextjs,nodejs&theme=dark" />
+</p>
+
+<p align="center">
+  <img src="https://skillicons.dev/icons?i=postgres,mongodb,redis,docker,aws,prisma&theme=dark" />
+</p>
+
+<br/>
+
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api?username=abhi06032005&show_icons=true&theme=dark&hide_border=true&count_private=true&bg_color=0d0d0d&title_color=ffffff&icon_color=ffffff&text_color=888888" height="150" />
   &nbsp;
-  <img src="https://komarev.com/ghpvc/?username=abhi06032005&label=Profile%20Views&color=000000&style=for-the-badge" alt="Profile Views" />
-</p>
-
----
-
-### 💻 System Terminal // Profile Telemetry
-
-<p align="center">
-  <img src="https://raw.githubusercontent.com/abhi06032005/abhi06032005/main/assets/cyber-terminal.svg" width="100%" alt="Interactive Cyber Terminal" />
-</p>
-
----
-
-### ⚡ Core Architecture & Engineering Highlights
-
-| Capability / Focus | Technical Architecture & Realized Impact |
-| :--- | :--- |
-| 🧠 **AI & Distributed RAG** | **Python-powered** vector search pipelines with **Qdrant, BullMQ, Groq & Cohere** delivering sub-30s document synthesis |
-| 🚀 **High-Throughput Platforms** | Rebuilt official institutional platform achieving **25–35% faster load times** & **95% CMS turnaround reduction** |
-| 🌐 **Real-Time Protocols** | Low-latency multiplayer networking running at **sub-16ms WebSocket response times** |
-| 🎯 **Problem Solving** | **200+ DSA problems solved**, 5-Star HackerRank in SQL & Problem Solving |
-
----
-
-### 🛠️ Technology Stack & Engineering Arsenal
-
-<p align="center">
-  <img src="https://raw.githubusercontent.com/abhi06032005/abhi06032005/main/assets/tech-stack.svg" width="100%" alt="Interactive Animated Tech Stack" />
-</p>
-
-<div align="center">
-
-#### Languages & AI Core
-<p align="center">
-  <a href="https://skillicons.dev">
-    <img src="https://skillicons.dev/icons?i=py,ts,js,cpp,java,postgres&theme=dark" alt="Languages" />
-  </a>
-</p>
-
-#### Frontend & UI Architecture
-<p align="center">
-  <a href="https://skillicons.dev">
-    <img src="https://skillicons.dev/icons?i=react,nextjs,tailwind,redux,vite,html,css&theme=dark" alt="Frontend" />
-  </a>
-</p>
-
-#### Backend, Databases & Event Queues
-<p align="center">
-  <a href="https://skillicons.dev">
-    <img src="https://skillicons.dev/icons?i=nodejs,express,mongodb,prisma,redis&theme=dark" alt="Backend & Databases" />
-  </a>
-</p>
-
-#### Cloud, AI Systems & DevOps
-<p align="center">
-  <a href="https://skillicons.dev">
-    <img src="https://skillicons.dev/icons?i=aws,docker,cloudflare,git,github,linux,postman,vscode&theme=dark" alt="DevOps & Tools" />
-  </a>
-</p>
-
-</div>
-
----
-
-### 🔮 Featured Projects
-
-```
-┌── [ 🛡️ FinGuard AI ] ────────────────────────────────────────────────────────┐
-│  • Full-stack financial intelligence platform with automated reconciliation  │
-│  • Secure Razorpay & SHA-256 HMAC authentication with zero payment drop-offs │
-│  • LLM pipeline converting raw filings to insights in under 30 seconds       │
-│  • Stack: Next.js, Node.js, PostgreSQL, Prisma, Tailwind CSS, LLMs           │
-└──────────────────────────────────────────────────────────────────────────────┘
-
-┌── [ 📄 Contextual PDF RAG System ] ──────────────────────────────────────────┐
-│  • Retrieval-Augmented Generation system with multi-document vector search   │
-│  • High-throughput context retrieval via Qdrant Vector DB & BullMQ workers   │
-│  • Grounded responses with precise passage citations & source verification   │
-│  • Stack: Python, Qdrant, Docker, BullMQ, Redis, Groq                        │
-└──────────────────────────────────────────────────────────────────────────────┘
-
-┌── [ ⚡ Real-Time Collaboration Canvas ] ─────────────────────────────────────┐
-│  • Low-latency multiplayer whiteboard with real-time cursor tracking        │
-│  • Sub-16ms WebSocket communication layer with room-based session scaling    │
-│  • Room code generation, JWT authentication & persistent canvas state        │
-│  • Stack: React, Node.js, WebSockets, Redis, Canvas API                      │
-└──────────────────────────────────────────────────────────────────────────────┘
-```
-
----
-
-### 📊 GitHub Telemetry & Activity
-
-<p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=abhi06032005&show_icons=true&theme=dark&hide_border=true&count_private=true&bg_color=050507&title_color=ffffff&icon_color=ffffff&text_color=a1a1aa" height="165" alt="GitHub Stats" />
-  &nbsp;&nbsp;
-  <img src="https://streak-stats.demolab.com?user=abhi06032005&theme=dark&hide_border=true&background=050507&ring=ffffff&fire=ffffff&currStreakLabel=ffffff" height="165" alt="GitHub Streak" />
+  <img src="https://streak-stats.demolab.com?user=abhi06032005&theme=dark&hide_border=true&background=0d0d0d&ring=ffffff&fire=ffffff&currStreakLabel=ffffff" height="150" />
 </p>
 
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=abhi06032005&layout=compact&theme=dark&hide_border=true&bg_color=050507&title_color=ffffff&text_color=a1a1aa" alt="Top Languages" />
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=abhi06032005&layout=compact&theme=dark&hide_border=true&bg_color=0d0d0d&title_color=ffffff&text_color=888888" />
+</p>
+
+<br/>
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/abhi06032005/abhi06032005/output/github-contribution-grid-snake-dark.svg" />
 </p>
 
 <p align="center">
-  <a href="https://github.com/ryo-ma/github-profile-trophy">
-    <img src="https://github-profile-trophy.vercel.app/?username=abhi06032005&theme=darkhub&no-frame=true&no-bg=true&margin_w=4" alt="GitHub Trophies" />
-  </a>
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:1a1a1a,100:000000&height=80&section=footer" width="100%" />
 </p>
-
----
-
-### 🐍 Contribution Stream
-
-<!-- Generated automatically via Platane/snk GitHub Action -->
-<p align="center">
-  <img src="https://raw.githubusercontent.com/abhi06032005/abhi06032005/output/github-contribution-grid-snake-dark.svg" alt="Contribution Snake Animation" />
-</p>
-
-<p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&custom_color=000000,27272a,52525b&height=100&section=footer" width="100%" alt="Footer Banner" />
-</p>
-<!-- v3.0-monochrome-globe-build -->
