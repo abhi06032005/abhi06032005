@@ -1,0 +1,386 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 520" width="100%" height="100%" fill="none">
+  <defs>
+    <!-- Background Card Gradient -->
+    <linearGradient id="cardBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#121216"/>
+      <stop offset="100%" stop-color="#08080a"/>
+    </linearGradient>
+
+    <!-- Tile Hover Gradient -->
+    <linearGradient id="tileBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#18181c"/>
+      <stop offset="100%" stop-color="#0f0f12"/>
+    </linearGradient>
+
+    <!-- Border Gradients -->
+    <linearGradient id="borderGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.3"/>
+      <stop offset="50%" stop-color="#71717a" stop-opacity="0.1"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0.2"/>
+    </linearGradient>
+
+    <!-- Glow Filters -->
+    <filter id="tileGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <filter id="strongGlow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="6" result="blur1"/>
+      <feGaussianBlur stdDeviation="2" result="blur2"/>
+      <feMerge>
+        <feMergeNode in="blur1"/>
+        <feMergeNode in="blur2"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <style>
+    /* CSS ANIMATIONS FOR TECH TILES */
+    @keyframes floatA {
+      0%, 100% { transform: translateY(0px); }
+      50% { transform: translateY(-4px); }
+    }
+
+    @keyframes floatB {
+      0%, 100% { transform: translateY(0px); }
+      50% { transform: translateY(-5px); }
+    }
+
+    @keyframes floatC {
+      0%, 100% { transform: translateY(0px); }
+      50% { transform: translateY(-3px); }
+    }
+
+    @keyframes pulseRing {
+      0% { stroke-opacity: 0.2; }
+      50% { stroke-opacity: 0.6; filter: drop-shadow(0 0 4px #ffffff); }
+      100% { stroke-opacity: 0.2; }
+    }
+
+    @keyframes scanLight {
+      0% { stroke-dashoffset: 400; }
+      100% { stroke-dashoffset: 0; }
+    }
+
+    .tile {
+      cursor: pointer;
+      transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    .tile:hover {
+      filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.45));
+    }
+
+    .tile:hover rect.tile-box {
+      stroke: #ffffff !important;
+      stroke-opacity: 0.85 !important;
+      fill: #222228 !important;
+    }
+
+    .tile:hover text.tile-title {
+      fill: #ffffff !important;
+      font-weight: 800 !important;
+    }
+
+    .tile:hover .tile-icon {
+      filter: drop-shadow(0 0 6px #ffffff);
+    }
+
+    .f-1 { animation: floatA 4s ease-in-out infinite; }
+    .f-2 { animation: floatB 4.6s ease-in-out infinite 0.5s; }
+    .f-3 { animation: floatC 3.8s ease-in-out infinite 1.2s; }
+    .f-4 { animation: floatA 4.8s ease-in-out infinite 0.8s; }
+
+    .glow-pulse { animation: pulseRing 3s ease-in-out infinite; }
+
+    .font-code { font-family: 'Fira Code', 'Courier New', monospace; }
+    .font-sans { font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, 'Inter', sans-serif; }
+  </style>
+
+  <!-- Container Box -->
+  <rect x="2" y="2" width="896" height="516" rx="14" fill="#08080a" stroke="url(#borderGrad)" stroke-width="1.5"/>
+
+  <!-- Top Category Bar / Header -->
+  <g transform="translate(30, 28)">
+    <circle cx="8" cy="8" r="4" fill="#ffffff" filter="url(#tileGlow)" class="glow-pulse"/>
+    <text x="22" y="12" fill="#ffffff" class="font-sans" font-size="14" font-weight="800" letter-spacing="1.5">
+      TECHNOLOGY ARSENAL // DISTRIBUTED ARCHITECTURE &amp; AI
+    </text>
+    <text x="836" y="12" text-anchor="end" fill="#71717a" class="font-code" font-size="11">
+      INTERACTIVE // HOVER ENABLED
+    </text>
+    <line x1="0" y1="26" x2="836" y2="26" stroke="#27272a" stroke-width="1"/>
+  </g>
+
+  <!-- ==================== SECTION 1: AI, PYTHON & RAG ARCHITECTURE ==================== -->
+  <g transform="translate(30, 72)">
+    <!-- Header -->
+    <text x="0" y="0" fill="#a1a1aa" class="font-sans" font-size="12" font-weight="700" letter-spacing="1">
+      🧠 AI SYSTEMS, RAG &amp; VECTOR PIPELINES
+    </text>
+
+    <!-- Tiles Grid -->
+    <!-- Tile 1: Python -->
+    <g transform="translate(0, 12)" class="tile f-1">
+      <rect class="tile-box" width="130" height="68" rx="8" fill="url(#tileBg)" stroke="#ffffff" stroke-width="1" stroke-opacity="0.18"/>
+      <!-- Python Icon Graphic -->
+      <g class="tile-icon" transform="translate(14, 16)">
+        <path d="M 12 0 C 6 0 6 3 6 3 L 6 6 L 12 6 L 12 7 L 4 7 C 4 7 0 7 0 13 C 0 19 3.5 19 3.5 19 L 5.5 19 L 5.5 16 C 5.5 13 8 13 8 13 L 13 13 C 15 13 16 11.5 16 10 L 16 3 C 16 0 12 0 12 0 Z M 9 2 C 9.8 2 10.5 2.7 10.5 3.5 C 10.5 4.3 9.8 5 9 5 C 8.2 5 7.5 4.3 7.5 3.5 C 7.5 2.7 8.2 2 9 2 Z" fill="#ffffff"/>
+        <path d="M 12 24 C 18 24 18 21 18 21 L 18 18 L 12 18 L 12 17 L 20 17 C 20 17 24 17 24 11 C 24 5 20.5 5 20.5 5 L 18.5 5 L 18.5 8 C 18.5 11 16 11 16 11 L 11 11 C 9 11 8 12.5 8 14 L 8 21 C 8 24 12 24 12 24 Z M 15 22 C 14.2 22 13.5 21.3 13.5 20.5 C 13.5 19.7 14.2 19 15 19 C 15.8 19 16.5 19.7 16.5 20.5 C 16.5 21.3 15.8 22 15 22 Z" fill="#a1a1aa"/>
+      </g>
+      <text class="tile-title font-sans" x="50" y="34" fill="#ffffff" font-size="13" font-weight="700">Python</text>
+      <text class="font-code" x="50" y="48" fill="#71717a" font-size="10">Core / AI / RAG</text>
+    </g>
+
+    <!-- Tile 2: Qdrant Vector DB -->
+    <g transform="translate(140, 12)" class="tile f-2">
+      <rect class="tile-box" width="132" height="68" rx="8" fill="url(#tileBg)" stroke="#ffffff" stroke-width="1" stroke-opacity="0.18"/>
+      <!-- Vector Cube Icon -->
+      <g class="tile-icon" transform="translate(14, 18)" stroke="#ffffff" stroke-width="1.8" fill="none">
+        <path d="M 12 2 L 22 8 L 22 18 L 12 24 L 2 18 L 2 8 Z"/>
+        <line x1="12" y1="2" x2="12" y2="24"/>
+        <line x1="2" y1="8" x2="22" y2="18"/>
+        <line x1="22" y1="8" x2="2" y2="18"/>
+      </g>
+      <text class="tile-title font-sans" x="50" y="34" fill="#ffffff" font-size="13" font-weight="700">Qdrant</text>
+      <text class="font-code" x="50" y="48" fill="#71717a" font-size="10">Vector DB / ANN</text>
+    </g>
+
+    <!-- Tile 3: RAG Pipelines -->
+    <g transform="translate(282, 12)" class="tile f-3">
+      <rect class="tile-box" width="138" height="68" rx="8" fill="url(#tileBg)" stroke="#ffffff" stroke-width="1" stroke-opacity="0.18"/>
+      <!-- Retrieval Neural Icon -->
+      <g class="tile-icon" transform="translate(14, 18)">
+        <circle cx="4" cy="12" r="3" fill="#ffffff"/>
+        <circle cx="18" cy="5" r="3" fill="#ffffff"/>
+        <circle cx="18" cy="19" r="3" fill="#ffffff"/>
+        <line x1="4" y1="12" x2="18" y2="5" stroke="#ffffff" stroke-width="1.5" stroke-opacity="0.6"/>
+        <line x1="4" y1="12" x2="18" y2="19" stroke="#ffffff" stroke-width="1.5" stroke-opacity="0.6"/>
+      </g>
+      <text class="tile-title font-sans" x="48" y="34" fill="#ffffff" font-size="13" font-weight="700">RAG Pipelines</text>
+      <text class="font-code" x="48" y="48" fill="#71717a" font-size="10">Context &amp; Chunks</text>
+    </g>
+
+    <!-- Tile 4: Groq & Cohere -->
+    <g transform="translate(430, 12)" class="tile f-4">
+      <rect class="tile-box" width="130" height="68" rx="8" fill="url(#tileBg)" stroke="#ffffff" stroke-width="1" stroke-opacity="0.18"/>
+      <!-- LLM Inference Icon -->
+      <g class="tile-icon" transform="translate(14, 18)" stroke="#ffffff" stroke-width="1.5" fill="none">
+        <rect x="2" y="2" width="18" height="18" rx="4"/>
+        <path d="M 6 11 L 10 15 L 16 7"/>
+      </g>
+      <text class="tile-title font-sans" x="48" y="34" fill="#ffffff" font-size="13" font-weight="700">Groq / Cohere</text>
+      <text class="font-code" x="48" y="48" fill="#71717a" font-size="10">Fast LLM Rerank</text>
+    </g>
+
+    <!-- Tile 5: BullMQ Queues -->
+    <g transform="translate(570, 12)" class="tile f-1">
+      <rect class="tile-box" width="130" height="68" rx="8" fill="url(#tileBg)" stroke="#ffffff" stroke-width="1" stroke-opacity="0.18"/>
+      <!-- Queue Bars Icon -->
+      <g class="tile-icon" transform="translate(14, 18)">
+        <rect x="2" y="2" width="18" height="4" rx="2" fill="#ffffff"/>
+        <rect x="2" y="9" width="18" height="4" rx="2" fill="#d4d4d8"/>
+        <rect x="2" y="16" width="18" height="4" rx="2" fill="#71717a"/>
+      </g>
+      <text class="tile-title font-sans" x="48" y="34" fill="#ffffff" font-size="13" font-weight="700">BullMQ</text>
+      <text class="font-code" x="48" y="48" fill="#71717a" font-size="10">Async Workers</text>
+    </g>
+
+    <!-- Tile 6: Embeddings -->
+    <g transform="translate(710, 12)" class="tile f-2">
+      <rect class="tile-box" width="126" height="68" rx="8" fill="url(#tileBg)" stroke="#ffffff" stroke-width="1" stroke-opacity="0.18"/>
+      <!-- Matrix Array Icon -->
+      <g class="tile-icon" transform="translate(14, 18)" fill="#ffffff">
+        <circle cx="4" cy="4" r="2"/>
+        <circle cx="11" cy="4" r="2"/>
+        <circle cx="18" cy="4" r="2"/>
+        <circle cx="4" cy="11" r="2"/>
+        <circle cx="11" cy="11" r="2"/>
+        <circle cx="18" cy="11" r="2"/>
+        <circle cx="4" cy="18" r="2"/>
+        <circle cx="11" cy="18" r="2"/>
+        <circle cx="18" cy="18" r="2"/>
+      </g>
+      <text class="tile-title font-sans" x="46" y="34" fill="#ffffff" font-size="13" font-weight="700">Embeddings</text>
+      <text class="font-code" x="46" y="48" fill="#71717a" font-size="10">Dense Vectors</text>
+    </g>
+  </g>
+
+  <!-- ==================== SECTION 2: FULL-STACK, WEB & REAL-TIME ==================== -->
+  <g transform="translate(30, 182)">
+    <text x="0" y="0" fill="#a1a1aa" class="font-sans" font-size="12" font-weight="700" letter-spacing="1">
+      ⚡ FULL-STACK ARCHITECTURE, NEXT.JS &amp; REAL-TIME
+    </text>
+
+    <!-- Tile 1: Next.js -->
+    <g transform="translate(0, 12)" class="tile f-3">
+      <rect class="tile-box" width="130" height="68" rx="8" fill="url(#tileBg)" stroke="#ffffff" stroke-width="1" stroke-opacity="0.18"/>
+      <!-- Next.js N Logo -->
+      <g class="tile-icon" transform="translate(14, 18)">
+        <circle cx="12" cy="12" r="11" fill="#000000" stroke="#ffffff" stroke-width="1.5"/>
+        <path d="M 8 7 L 8 17 M 16 7 L 16 17 M 8 7 L 16 17" stroke="#ffffff" stroke-width="1.5" stroke-linecap="round"/>
+      </g>
+      <text class="tile-title font-sans" x="50" y="34" fill="#ffffff" font-size="13" font-weight="700">Next.js 15</text>
+      <text class="font-code" x="50" y="48" fill="#71717a" font-size="10">App Router / SSR</text>
+    </g>
+
+    <!-- Tile 2: React -->
+    <g transform="translate(140, 12)" class="tile f-4">
+      <rect class="tile-box" width="132" height="68" rx="8" fill="url(#tileBg)" stroke="#ffffff" stroke-width="1" stroke-opacity="0.18"/>
+      <!-- React Atom Icon -->
+      <g class="tile-icon" transform="translate(14, 18)" stroke="#ffffff" stroke-width="1.4" fill="none">
+        <ellipse cx="12" cy="12" rx="11" ry="4.5"/>
+        <ellipse cx="12" cy="12" rx="11" ry="4.5" transform="rotate(60 12 12)"/>
+        <ellipse cx="12" cy="12" rx="11" ry="4.5" transform="rotate(120 12 12)"/>
+        <circle cx="12" cy="12" r="2" fill="#ffffff"/>
+      </g>
+      <text class="tile-title font-sans" x="50" y="34" fill="#ffffff" font-size="13" font-weight="700">React</text>
+      <text class="font-code" x="50" y="48" fill="#71717a" font-size="10">Hooks / UI State</text>
+    </g>
+
+    <!-- Tile 3: TypeScript -->
+    <g transform="translate(282, 12)" class="tile f-1">
+      <rect class="tile-box" width="138" height="68" rx="8" fill="url(#tileBg)" stroke="#ffffff" stroke-width="1" stroke-opacity="0.18"/>
+      <!-- TS Badge -->
+      <g class="tile-icon" transform="translate(14, 18)">
+        <rect x="2" y="2" width="20" height="20" rx="4" fill="#ffffff"/>
+        <text x="12" y="16" text-anchor="middle" fill="#000000" font-family="'Segoe UI', sans-serif" font-weight="900" font-size="11">TS</text>
+      </g>
+      <text class="tile-title font-sans" x="48" y="34" fill="#ffffff" font-size="13" font-weight="700">TypeScript</text>
+      <text class="font-code" x="48" y="48" fill="#71717a" font-size="10">Strict Typing</text>
+    </g>
+
+    <!-- Tile 4: Node.js -->
+    <g transform="translate(430, 12)" class="tile f-2">
+      <rect class="tile-box" width="130" height="68" rx="8" fill="url(#tileBg)" stroke="#ffffff" stroke-width="1" stroke-opacity="0.18"/>
+      <!-- Node Hexagon -->
+      <g class="tile-icon" transform="translate(14, 18)" stroke="#ffffff" stroke-width="1.5" fill="none">
+        <path d="M 12 2 L 21 7 L 21 17 L 12 22 L 3 17 L 3 7 Z"/>
+        <text x="12" y="15" text-anchor="middle" stroke="none" fill="#ffffff" font-family="monospace" font-weight="bold" font-size="9">JS</text>
+      </g>
+      <text class="tile-title font-sans" x="48" y="34" fill="#ffffff" font-size="13" font-weight="700">Node.js</text>
+      <text class="font-code" x="48" y="48" fill="#71717a" font-size="10">Express / Async</text>
+    </g>
+
+    <!-- Tile 5: WebSockets (~16ms) -->
+    <g transform="translate(570, 12)" class="tile f-3">
+      <rect class="tile-box" width="130" height="68" rx="8" fill="url(#tileBg)" stroke="#ffffff" stroke-width="1" stroke-opacity="0.18"/>
+      <!-- WebSocket Bidirectional Pulse -->
+      <g class="tile-icon" transform="translate(14, 18)" stroke="#ffffff" stroke-width="1.6" fill="none">
+        <path d="M 3 8 L 19 8 M 15 4 L 19 8 L 15 12"/>
+        <path d="M 21 16 L 5 16 M 9 12 L 5 16 L 9 20"/>
+      </g>
+      <text class="tile-title font-sans" x="48" y="34" fill="#ffffff" font-size="13" font-weight="700">WebSockets</text>
+      <text class="font-code" x="48" y="48" fill="#71717a" font-size="10">~16ms Sync</text>
+    </g>
+
+    <!-- Tile 6: Tailwind CSS -->
+    <g transform="translate(710, 12)" class="tile f-4">
+      <rect class="tile-box" width="126" height="68" rx="8" fill="url(#tileBg)" stroke="#ffffff" stroke-width="1" stroke-opacity="0.18"/>
+      <!-- Tailwind Wave -->
+      <g class="tile-icon" transform="translate(14, 18)" fill="#ffffff">
+        <path d="M 6 12 C 7.5 6 11 6 13 8 C 14.5 9.5 16 10 18 10 C 20.5 10 22 8 22 8 C 20.5 14 17 14 15 12 C 13.5 10.5 12 10 10 10 C 7.5 10 6 12 6 12 Z M 2 17 C 3.5 11 7 11 9 13 C 10.5 14.5 12 15 14 15 C 16.5 15 18 13 18 13 C 16.5 19 13 19 11 17 C 9.5 15.5 8 15 6 15 C 3.5 15 2 17 2 17 Z"/>
+      </g>
+      <text class="tile-title font-sans" x="46" y="34" fill="#ffffff" font-size="13" font-weight="700">Tailwind</text>
+      <text class="font-code" x="46" y="48" fill="#71717a" font-size="10">Design Systems</text>
+    </g>
+  </g>
+
+  <!-- ==================== SECTION 3: DATABASES, CLOUD & DEVOPS ==================== -->
+  <g transform="translate(30, 292)">
+    <text x="0" y="0" fill="#a1a1aa" class="font-sans" font-size="12" font-weight="700" letter-spacing="1">
+      ⚙️ DISTRIBUTED DATABASES, CLOUD &amp; INFRASTRUCTURE
+    </text>
+
+    <!-- Tile 1: PostgreSQL -->
+    <g transform="translate(0, 12)" class="tile f-1">
+      <rect class="tile-box" width="130" height="68" rx="8" fill="url(#tileBg)" stroke="#ffffff" stroke-width="1" stroke-opacity="0.18"/>
+      <!-- Database Cylinders -->
+      <g class="tile-icon" transform="translate(14, 18)" stroke="#ffffff" stroke-width="1.4" fill="none">
+        <ellipse cx="12" cy="6" rx="9" ry="3"/>
+        <path d="M 3 6 L 3 18 C 3 20 21 20 21 18 L 21 6"/>
+        <path d="M 3 12 C 3 14 21 14 21 12"/>
+      </g>
+      <text class="tile-title font-sans" x="50" y="34" fill="#ffffff" font-size="13" font-weight="700">PostgreSQL</text>
+      <text class="font-code" x="50" y="48" fill="#71717a" font-size="10">Relational / SQL</text>
+    </g>
+
+    <!-- Tile 2: Redis -->
+    <g transform="translate(140, 12)" class="tile f-2">
+      <rect class="tile-box" width="132" height="68" rx="8" fill="url(#tileBg)" stroke="#ffffff" stroke-width="1" stroke-opacity="0.18"/>
+      <!-- Redis Stack Layers -->
+      <g class="tile-icon" transform="translate(14, 18)" stroke="#ffffff" stroke-width="1.4" fill="none">
+        <path d="M 12 3 L 21 7 L 12 11 L 3 7 Z"/>
+        <path d="M 3 11 L 12 15 L 21 11"/>
+        <path d="M 3 15 L 12 19 L 21 15"/>
+      </g>
+      <text class="tile-title font-sans" x="50" y="34" fill="#ffffff" font-size="13" font-weight="700">Redis</text>
+      <text class="font-code" x="50" y="48" fill="#71717a" font-size="10">In-Memory Cache</text>
+    </g>
+
+    <!-- Tile 3: Docker -->
+    <g transform="translate(282, 12)" class="tile f-3">
+      <rect class="tile-box" width="138" height="68" rx="8" fill="url(#tileBg)" stroke="#ffffff" stroke-width="1" stroke-opacity="0.18"/>
+      <!-- Docker Containers -->
+      <g class="tile-icon" transform="translate(14, 18)" fill="#ffffff">
+        <rect x="2" y="8" width="4" height="4" rx="0.5"/>
+        <rect x="8" y="8" width="4" height="4" rx="0.5"/>
+        <rect x="14" y="8" width="4" height="4" rx="0.5"/>
+        <rect x="8" y="2" width="4" height="4" rx="0.5"/>
+        <path d="M 1 14 C 1 18 6 21 15 21 C 21 21 23 18 23 15 C 21 15 20 16 18 16 C 16 16 15 15 13 15 C 10 15 9 16 7 16 C 5 16 3 14 1 14 Z"/>
+      </g>
+      <text class="tile-title font-sans" x="48" y="34" fill="#ffffff" font-size="13" font-weight="700">Docker</text>
+      <text class="font-code" x="48" y="48" fill="#71717a" font-size="10">Containers / CI</text>
+    </g>
+
+    <!-- Tile 4: Prisma ORM -->
+    <g transform="translate(430, 12)" class="tile f-4">
+      <rect class="tile-box" width="130" height="68" rx="8" fill="url(#tileBg)" stroke="#ffffff" stroke-width="1" stroke-opacity="0.18"/>
+      <!-- Prisma Triangle -->
+      <g class="tile-icon" transform="translate(14, 18)" stroke="#ffffff" stroke-width="1.6" fill="none">
+        <path d="M 4 21 L 12 3 L 20 15 L 14 21 Z"/>
+      </g>
+      <text class="tile-title font-sans" x="48" y="34" fill="#ffffff" font-size="13" font-weight="700">Prisma ORM</text>
+      <text class="font-code" x="48" y="48" fill="#71717a" font-size="10">Schema &amp; Types</text>
+    </g>
+
+    <!-- Tile 5: Cloudflare & AWS -->
+    <g transform="translate(570, 12)" class="tile f-1">
+      <rect class="tile-box" width="130" height="68" rx="8" fill="url(#tileBg)" stroke="#ffffff" stroke-width="1" stroke-opacity="0.18"/>
+      <!-- Cloud Outline -->
+      <g class="tile-icon" transform="translate(14, 18)" stroke="#ffffff" stroke-width="1.5" fill="none">
+        <path d="M 6 17 C 3.5 17 2 15 2 13 C 2 10.5 4 9 6.5 9 C 7 6 10 4 13.5 4 C 17 4 19.5 6.5 20 9.5 C 21.5 10 22.5 11.5 22.5 13 C 22.5 15 21 17 18.5 17 Z"/>
+      </g>
+      <text class="tile-title font-sans" x="48" y="34" fill="#ffffff" font-size="13" font-weight="700">Cloud &amp; CDN</text>
+      <text class="font-code" x="48" y="48" fill="#71717a" font-size="10">Cloudflare / AWS</text>
+    </g>
+
+    <!-- Tile 6: Linux & Git -->
+    <g transform="translate(710, 12)" class="tile f-2">
+      <rect class="tile-box" width="126" height="68" rx="8" fill="url(#tileBg)" stroke="#ffffff" stroke-width="1" stroke-opacity="0.18"/>
+      <!-- Terminal Prompt / Branch -->
+      <g class="tile-icon" transform="translate(14, 18)" stroke="#ffffff" stroke-width="1.6" fill="none">
+        <polyline points="4 6 10 12 4 18"/>
+        <line x1="12" y1="18" x2="20" y2="18"/>
+      </g>
+      <text class="tile-title font-sans" x="46" y="34" fill="#ffffff" font-size="13" font-weight="700">Linux &amp; Git</text>
+      <text class="font-code" x="46" y="48" fill="#71717a" font-size="10">CLI / DevOps</text>
+    </g>
+  </g>
+
+  <!-- ==================== BOTTOM SYSTEM FOOTER ==================== -->
+  <g transform="translate(30, 480)">
+    <line x1="0" y1="0" x2="840" y2="0" stroke="#27272a" stroke-width="0.8"/>
+    <text x="0" y="16" fill="#71717a" class="font-code" font-size="10.5" letter-spacing="1">
+      STACK SUMMARY: 18x PRODUCTION CORE TECHNOLOGIES // CONTINUOUS DEPLOYMENT READY
+    </text>
+    <text x="840" y="16" text-anchor="end" fill="#ffffff" class="font-code" font-size="10.5" font-weight="bold">
+      ALL SYSTEMS GREEN ●
+    </text>
+  </g>
+</svg>

@@ -4,7 +4,7 @@
 
 <p align="center">
   <a href="https://github.com/abhi06032005">
-    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=20&pause=1000&color=FFFFFF&center=true&vCenter=true&width=580&lines=Full-Stack+Developer+%26+AI+Systems+Architect;Engineering+Scalable+Distributed+Applications;Building+Production+RAG+%26+LLM+Pipelines;Crafting+Sub-16ms+Real-Time+WebSocket+Systems;Open+Source+Contributor+%26+System+Builder" alt="Typing SVG" />
+    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=20&pause=1000&color=FFFFFF&center=true&vCenter=true&width=590&lines=Full-Stack+Developer+%26+AI+Systems+Architect;Python+%26+Intelligent+RAG+Pipeline+Engineering;Qdrant+Vector+Retrieval+%26+Distributed+Systems;Crafting+Sub-16ms+Real-Time+WebSocket+Protocols;Open+Source+Contributor+%26+System+Builder" alt="Typing SVG" />
   </a>
 </p>
 
@@ -38,8 +38,8 @@
 
 | Capability / Focus | Technical Architecture & Realized Impact |
 | :--- | :--- |
-| 🚀 **High-Throughput Systems** | Rebuilt official institutional platform achieving **25–35% faster load times** & **95% CMS turnaround reduction** |
-| 🧠 **AI & Distributed RAG** | Vector search pipelines powered by **Qdrant, BullMQ, Groq & Cohere** with sub-30s intelligent document synthesis |
+| 🧠 **AI & Distributed RAG** | **Python-powered** vector search pipelines with **Qdrant, BullMQ, Groq & Cohere** delivering sub-30s document synthesis |
+| 🚀 **High-Throughput Platforms** | Rebuilt official institutional platform achieving **25–35% faster load times** & **95% CMS turnaround reduction** |
 | 🌐 **Real-Time Protocols** | Low-latency multiplayer networking running at **sub-16ms WebSocket response times** |
 | 🎯 **Problem Solving** | **200+ DSA problems solved**, 5-Star HackerRank in SQL & Problem Solving |
 
@@ -47,12 +47,16 @@
 
 ### 🛠️ Technology Stack & Engineering Arsenal
 
+<p align="center">
+  <img src="https://raw.githubusercontent.com/abhi06032005/abhi06032005/main/assets/tech-stack.svg" width="100%" alt="Interactive Animated Tech Stack" />
+</p>
+
 <div align="center">
 
-#### Languages & Runtimes
+#### Languages & AI Core
 <p align="center">
   <a href="https://skillicons.dev">
-    <img src="https://skillicons.dev/icons?i=ts,js,py,cpp,java,postgres&theme=dark" alt="Languages" />
+    <img src="https://skillicons.dev/icons?i=py,ts,js,cpp,java,postgres&theme=dark" alt="Languages" />
   </a>
 </p>
 
