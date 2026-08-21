@@ -1,10 +1,10 @@
 <div align="center">
 
-<!-- ═══════════════════════════════════════════════════════════════════ -->
-<!--  🏴‍☠️ HERO SECTION: REAL ONE PIECE CHARACTERS (LUFFY & ZORO ON SUNNY) -->
-<!-- ═══════════════════════════════════════════════════════════════════ -->
+<!-- ══════════════════════════════════════════════════════════════════ -->
+<!--  🎨 Dot-Matrix Portrait                                           -->
+<!-- ══════════════════════════════════════════════════════════════════ -->
 <a href="https://github.com/abhi06032005">
-  <img src="./assets/onepiece-banner.svg" width="100%" alt="Abhijeet Nayak — Luffy Gear 5 & Zoro One Piece Banner" />
+  <img src="./assets/dot-portrait.svg" width="260" alt="Abhijeet Nayak Dot-Matrix Portrait" />
 </a>
 
 <br/>
@@ -61,11 +61,6 @@
 ---
 
 ## 👨‍💻 About Me & Captain's Codex
-
-<!-- Real Luffy Wanted Poster SVG -->
-<p align="center">
-  <img src="./assets/wanted-poster.svg" width="100%" alt="Abhijeet Nayak Wanted Poster with Luffy"/>
-</p>
 
 ```typescript
 const abhijeet: DeveloperProfile = {
@@ -287,11 +282,6 @@ const abhijeet: DeveloperProfile = {
 ## 🎵 Spotify Coding Beats & Drums of Liberation
 
 <div align="center">
-
-<!-- Animated Spotify / Drums of Liberation Music Card -->
-<img src="./assets/onepiece-audio.svg" width="100%" alt="Spotify Lo-Fi Drums of Liberation Beats"/>
-
-<br/><br/>
 
 <!-- Dynamic Developer Quote -->
 <img src="https://quotes-github-readme.vercel.app/api?type=horizontal&theme=tokyonight" width="100%" alt="Daily Developer Quote" />
